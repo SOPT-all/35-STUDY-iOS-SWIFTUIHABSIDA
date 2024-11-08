@@ -8,18 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name: String = ""
+    @State private var selectedTab: Int = 0
+    
     var body: some View {
-        Text("안녕하세요")
-            .foregroundStyle(.white)
-            .font(.largeTitle)
-            .frame(maxWidth:.infinity)
-            .padding()
-            .background(.blue)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
-            .padding()
+       Text("스유 스터디")
     }
-
 }
+
 
 #Preview {
     ContentView()
