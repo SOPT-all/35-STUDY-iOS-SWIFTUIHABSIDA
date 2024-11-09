@@ -32,27 +32,30 @@ struct ComponentExample: View {
         //            .padding()  // 여백 추가
         //            .background(Color.yellow.opacity(0.3))  // 배경색 설정 - 반투명
         //            .cornerRadius(10)  // 둥근 모서리
-        TabView(selection: $selectedTab) {
-            VStack {
-                Text("홈 화면")
-                    .font(.title)
-            }
-            .tabItem {
-                Label("홈", systemImage: "house.fill")
-            }
-            .tag(0)
-            
-            VStack {
-                Text("설정 화면")
-                    .font(.title)
-            }
-            .tabItem {
-                Label("설정", systemImage: "gearshape.fill")
-            }
-            .tag(1)
-        }
-        .accentColor(.coral) // 선택된 탭의 색상 설정
-        
+        //        TabView(selection: $selectedTab) {
+        //            VStack {
+        //                Text("홈 화면")
+        //                    .font(.title)
+        //            }
+        //            .tabItem {
+        //                Label("홈", systemImage: "house.fill")
+        //            }
+        //            .tag(0)
+        //
+        //            VStack {
+        //                Text("설정 화면")
+        //                    .font(.title)
+        //            }
+        //            .tabItem {
+        //                Label("설정", systemImage: "gearshape.fill")
+        //            }
+        //            .tag(1)
+        //        }
+        //        .accentColor(.coral) // 선택된 탭의 색상 설정
+        Image("character_image")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 100, height: 100)  // 이미지 크기 조정        
     }
 }
 
