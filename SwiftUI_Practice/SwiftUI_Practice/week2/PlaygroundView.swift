@@ -9,7 +9,35 @@ import SwiftUI
 
 struct PlaygroundView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color("gray10")
+                .ignoresSafeArea()
+            
+            VStack {
+                HeaderSection()
+            }
+            .padding(.horizontal, 16)
+        }
+    }
+}
+
+struct HeaderSection: View {
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Image("sopt")
+                    .resizable()
+                    .frame(width: 90, height: 30)
+                Spacer()
+            }
+            
+            Text("김민서 님은\nSOPT와 9개월째")
+                .font(.title)
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
+        }
+    }
+}
     }
 }
 
