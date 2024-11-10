@@ -31,7 +31,8 @@ struct HeaderSection: View {
             HStack {
                 Image("sopt")
                     .resizable()
-                    .frame(width: 90, height: 30)
+                    .frame(width: 78, height: 25)
+                    .padding(.bottom, 10)
                 Spacer()
             }
             
@@ -99,8 +100,8 @@ struct FooterSection: View {
                 .cornerRadius(10)
                 .padding(.top, 10)
             HStack {
-                createButton(title: "콕 찌르기", height: 170)
-                createButton(title: "SOPT-AMP!", height: 170)
+                createButton(title: "콕 찌르기", height: 140)
+                createButton(title: "SOPT-AMP!", height: 140)
             }
         }
     }
