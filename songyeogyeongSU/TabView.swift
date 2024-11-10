@@ -10,7 +10,7 @@ import SwiftUI
 struct CustomTabView: View {
   var body: some View {
     TabView {
-      Text("1")
+      CalculatorView()
         .tabItem {
           Image(systemName: "1.square.fill")
           Text("계산기")
