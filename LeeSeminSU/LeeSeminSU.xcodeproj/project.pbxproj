@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		769FAB262CE1157A00785E3D /* SpacerPaddingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FAB252CE1157A00785E3D /* SpacerPaddingExample.swift */; };
 		76BD46112CE103AB00E215FE /* VStackHStackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD46102CE103AB00E215FE /* VStackHStackExample.swift */; };
 		76BD46132CE103C300E215FE /* ZStackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD46122CE103C300E215FE /* ZStackExample.swift */; };
 		76BD461B2CE10C9F00E215FE /* ComponentExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD461A2CE10C9F00E215FE /* ComponentExample.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		769FAB252CE1157A00785E3D /* SpacerPaddingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerPaddingExample.swift; sourceTree = "<group>"; };
 		76BD46102CE103AB00E215FE /* VStackHStackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackHStackExample.swift; sourceTree = "<group>"; };
 		76BD46122CE103C300E215FE /* ZStackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackExample.swift; sourceTree = "<group>"; };
 		76BD461A2CE10C9F00E215FE /* ComponentExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentExample.swift; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		769FAB242CE1155700785E3D /* SpacerPadding */ = {
+			isa = PBXGroup;
+			children = (
+				769FAB252CE1157A00785E3D /* SpacerPaddingExample.swift */,
+			);
+			path = SpacerPadding;
+			sourceTree = "<group>";
+		};
 		76BD46192CE10C8300E215FE /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		76FC2DD82CE06C37000B329B /* Week2 */ = {
 			isa = PBXGroup;
 			children = (
+				769FAB242CE1155700785E3D /* SpacerPadding */,
 				76BD46192CE10C8300E215FE /* UIComponent */,
 				76FC2DD92CE06C4C000B329B /* Stacks */,
 			);
@@ -172,6 +183,7 @@
 			files = (
 				76DFF9322CD7B4F100C373C3 /* ContentView.swift in Sources */,
 				76DFF9302CD7B4F100C373C3 /* LeeSeminSUApp.swift in Sources */,
+				769FAB262CE1157A00785E3D /* SpacerPaddingExample.swift in Sources */,
 				76BD461B2CE10C9F00E215FE /* ComponentExample.swift in Sources */,
 				76BD46132CE103C300E215FE /* ZStackExample.swift in Sources */,
 				76BD46112CE103AB00E215FE /* VStackHStackExample.swift in Sources */,

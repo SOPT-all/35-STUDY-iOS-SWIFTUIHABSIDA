@@ -13,7 +13,9 @@ struct ContentView: View {
 //        VStackHStackExample()
 //        ZStackExampleView()
         
-        ComponentExample()
+//        ComponentExample()
+        
+        SpacerPaddingExample()
     }
 }
 
