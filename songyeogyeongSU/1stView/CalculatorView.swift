@@ -113,6 +113,7 @@ struct CalculatorView: View {
           }
         }
       }
+      .padding(.bottom)
     }
   }
 }
