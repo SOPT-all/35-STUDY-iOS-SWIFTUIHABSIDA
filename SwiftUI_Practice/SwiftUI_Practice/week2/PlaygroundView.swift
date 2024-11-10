@@ -16,6 +16,7 @@ struct PlaygroundView: View {
             VStack {
                 HeaderSection()
                 TagSection()
+                ButtonSection()
             }
             .padding(.horizontal, 16)
         }
@@ -75,7 +76,28 @@ struct ButtonSection: View {
                 .cornerRadius(10)
         }
     }
+    
+    var body: some View {
+        VStack {
+            createButton(title: "이력서를 쓰며 확인해야할 7가지", height: 80)
+            
+            HStack {
+                createButton(title: "출석하기", height: 210)
+                
+                VStack {
+                    createButton(title: "모임/스터디", height: 100)
+                    createButton(title: "Playground", height: 100)
+                }
+            }
+            
+            HStack {
+                createButton(title: "멤버", height: 100)
+                createButton(title: "프로젝트", height: 100)
+            }
+        }
+    }
 }
+
     }
 }
 
