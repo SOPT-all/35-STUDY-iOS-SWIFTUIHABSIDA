@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76BD46112CE103AB00E215FE /* VStackHStackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD46102CE103AB00E215FE /* VStackHStackExample.swift */; };
+		76BD46132CE103C300E215FE /* ZStackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD46122CE103C300E215FE /* ZStackExample.swift */; };
 		76DFF9302CD7B4F100C373C3 /* LeeSeminSUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DFF92F2CD7B4F100C373C3 /* LeeSeminSUApp.swift */; };
 		76DFF9322CD7B4F100C373C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DFF9312CD7B4F100C373C3 /* ContentView.swift */; };
 		76DFF9342CD7B4F200C373C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DFF9332CD7B4F200C373C3 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76BD46102CE103AB00E215FE /* VStackHStackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackHStackExample.swift; sourceTree = "<group>"; };
+		76BD46122CE103C300E215FE /* ZStackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackExample.swift; sourceTree = "<group>"; };
 		76DFF92C2CD7B4F100C373C3 /* LeeSeminSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeeSeminSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DFF92F2CD7B4F100C373C3 /* LeeSeminSUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeSeminSUApp.swift; sourceTree = "<group>"; };
 		76DFF9312CD7B4F100C373C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 		76DFF92E2CD7B4F100C373C3 /* LeeSeminSU */ = {
 			isa = PBXGroup;
 			children = (
+				76FC2DD82CE06C37000B329B /* Week2 */,
 				76DFF92F2CD7B4F100C373C3 /* LeeSeminSUApp.swift */,
 				76DFF9312CD7B4F100C373C3 /* ContentView.swift */,
 				76DFF9332CD7B4F200C373C3 /* Assets.xcassets */,
@@ -65,6 +70,23 @@
 				76DFF9362CD7B4F200C373C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76FC2DD82CE06C37000B329B /* Week2 */ = {
+			isa = PBXGroup;
+			children = (
+				76FC2DD92CE06C4C000B329B /* Stacks */,
+			);
+			path = Week2;
+			sourceTree = "<group>";
+		};
+		76FC2DD92CE06C4C000B329B /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				76BD46102CE103AB00E215FE /* VStackHStackExample.swift */,
+				76BD46122CE103C300E215FE /* ZStackExample.swift */,
+			);
+			path = Stacks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			files = (
 				76DFF9322CD7B4F100C373C3 /* ContentView.swift in Sources */,
 				76DFF9302CD7B4F100C373C3 /* LeeSeminSUApp.swift in Sources */,
+				76BD46132CE103C300E215FE /* ZStackExample.swift in Sources */,
+				76BD46112CE103AB00E215FE /* VStackHStackExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
