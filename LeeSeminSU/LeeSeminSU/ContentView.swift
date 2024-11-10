@@ -15,7 +15,9 @@ struct ContentView: View {
         
 //        ComponentExample()
         
-        SpacerPaddingExample()
+//        SpacerPaddingExample()
+        
+        ModifierExample()
     }
 }
 
