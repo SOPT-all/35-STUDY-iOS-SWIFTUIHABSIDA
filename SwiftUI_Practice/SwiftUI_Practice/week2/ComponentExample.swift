@@ -52,10 +52,23 @@ struct ComponentExample: View {
         //            .tag(1)
         //        }
         //        .accentColor(.coral) // 선택된 탭의 색상 설정
-        Image("character_image")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 100, height: 100)  // 이미지 크기 조정        
+        //        Image("character_image")
+        //            .resizable()
+        //            .scaledToFit()
+        //            .frame(width: 100, height: 100)  // 이미지 크기 조정
+        //    }
+        
+        Button(action: {  // 버튼 클릭 시 실행되는 액션
+            print("버튼이 클릭되었습니다!")  // 클릭 시 콘솔에 메시지 출력
+        }) {
+            Text("클릭하고 싶지?")  // 버튼에 표시될 텍스트
+                .font(.headline)  // 텍스트 폰트 설정
+                .padding()  // 버튼에 여백 추가
+                .frame(width: 200, height: 50)  // 버튼 크기 설정
+                .background(Color.coral)  // 버튼 배경색
+                .foregroundColor(.white)  // 텍스트 색상
+                .cornerRadius(10)  // 둥근 모서리
+        }
     }
 }
 
