@@ -11,7 +11,9 @@ struct ContentView: View {
     var body: some View {
         
 //        VStackHStackExample()
-        ZStackExampleView()
+//        ZStackExampleView()
+        
+        ComponentExample()
     }
 }
 
