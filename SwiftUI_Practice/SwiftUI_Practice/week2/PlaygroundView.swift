@@ -61,6 +61,21 @@ struct TagSection: View {
         }
     }
 }
+
+// 버튼 섹션
+struct ButtonSection: View {
+    private func createButton(title: String, height: CGFloat) -> some View {
+        return Button(action: {}) {
+            Text(title)
+                .padding()
+                .fontWeight(.semibold)
+                .frame(maxWidth: .infinity, maxHeight: height)
+                .background(.gray09)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+        }
+    }
+}
     }
 }
 
