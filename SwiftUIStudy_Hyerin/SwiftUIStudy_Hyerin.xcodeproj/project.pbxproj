@@ -11,6 +11,7 @@
 		D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FD2CE0E076004761A7 /* Assets.xcassets */; };
 		D05C32032CE0E076004761A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FE2CE0E076004761A7 /* ContentView.swift */; };
 		D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */; };
+		D05C32082CE0E2E2004761A7 /* ComponentPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C32072CE0E2DC004761A7 /* ComponentPracticeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		D05C31FD2CE0E076004761A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05C31FE2CE0E076004761A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStudy_HyerinApp.swift; sourceTree = "<group>"; };
+		D05C32072CE0E2DC004761A7 /* ComponentPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPracticeView.swift; sourceTree = "<group>"; };
 		D09CC1DA2CD6330300EF4917 /* SwiftUIStudy_Hyerin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStudy_Hyerin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,6 +52,14 @@
 				D05C32062CE0E092004761A7 /* Week2 */,
 			);
 			path = SwiftUIStudy_Hyerin;
+			sourceTree = "<group>";
+		};
+		D05C32062CE0E092004761A7 /* Week2 */ = {
+			isa = PBXGroup;
+			children = (
+				D05C32072CE0E2DC004761A7 /* ComponentPracticeView.swift */,
+			);
+			path = Week2;
 			sourceTree = "<group>";
 		};
 		D09CC1D12CD6330300EF4917 = {
@@ -143,6 +153,7 @@
 			files = (
 				D05C32032CE0E076004761A7 /* ContentView.swift in Sources */,
 				D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */,
+				D05C32082CE0E2E2004761A7 /* ComponentPracticeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
