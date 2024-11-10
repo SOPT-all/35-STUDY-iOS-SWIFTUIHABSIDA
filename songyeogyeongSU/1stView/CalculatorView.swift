@@ -7,19 +7,27 @@
 
 import SwiftUI
 
+enum ButtonType: String {
+  case first, second, third, fourth, fifth, sixth, seventh, eighth, nineth, zero
+  case comma, equal, plus, minus, multiply, devide
+  case percent, opposite, clear
+}
+
 struct CalculatorView: View {
   @State private var finalNumber: String = "0"
-  private let buttonNumber: [[String]] = [
-    ["C","/","%","$"],
-    ["7","8","9","X"],
-    ["4","5","6","-"],
-    ["1","2","3","+"],
-    ["0","0",",","="]
+  
+  private let buttonNumber: [[ButtonType]] = [
+    [.clear, .opposite, .percent, .devide],
+    [.seventh, .eighth, .nineth, .multiply],
+    [.fourth, .fifth, .sixth, .minus],
+    [.first, .second, .third, .plus],
+    [.zero, .zero, .comma, .equal]
   ]
   
   var body: some View {
     ZStack {
       Color.black.ignoresSafeArea()
+      
       VStack {
         Spacer()
         HStack {
@@ -29,6 +37,40 @@ struct CalculatorView: View {
             .foregroundColor(.white)
             .font(.system(size: 73))
         }
+        HStack {
+          Button {
+            finalNumber = "0"
+          } label: {
+            Text("C")
+              .frame(width: 80, height: 80)
+              .background(.gray)
+              .cornerRadius(40)
+              .foregroundColor(.black)
+              .font(.system(size: 33))
+          }
+          
+          Text("/")
+            .frame(width: 80, height: 80)
+            .background(.gray)
+            .cornerRadius(40)
+            .foregroundColor(.white)
+            .font(.system(size: 33))
+          
+          Text("%")
+            .frame(width: 80, height: 80)
+            .background(.gray)
+            .cornerRadius(40)
+            .foregroundColor(.white)
+            .font(.system(size: 33))
+          
+          Text("$")
+            .frame(width: 80, height: 80)
+            .background(.gray)
+            .cornerRadius(40)
+            .foregroundColor(.white)
+            .font(.system(size: 33))
+        }
+        
         ForEach(buttonNumber, id: \.self) { line in
           HStack {
             ForEach(line, id: \.self) { row in
@@ -39,7 +81,7 @@ struct CalculatorView: View {
                   finalNumber += "7"
                 }
               } label: {
-                Text(row)
+                Text(row.rawValue)
                   .frame(width: 80, height: 80)
                   .background(.gray)
                   .cornerRadius(40)
