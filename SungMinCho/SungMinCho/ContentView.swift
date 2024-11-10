@@ -42,13 +42,16 @@ struct ContentView: View {
                 
                 HStack(spacing: 20) {
                     TextField("PlaceHolder", text: $secondTextFieldValue)
+                        .frame(width: 200)
                         .textFieldStyle(.roundedBorder)
                         .padding()
+                    
                     Button {
                         secondTabShowingText = secondTextFieldValue
                     } label: {
                         Text("확인")
                     }
+                    .frame(width: 40)
                 }
                 
                 if !secondTabShowingText.isEmpty {
@@ -62,7 +65,6 @@ struct ContentView: View {
                 Image(systemName: "person.fill")
                 Text("Second")
             }
-            
         }
     }
 }
