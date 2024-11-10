@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D05C32012CE0E076004761A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */; };
+		D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FD2CE0E076004761A7 /* Assets.xcassets */; };
+		D05C32032CE0E076004761A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FE2CE0E076004761A7 /* ContentView.swift */; };
+		D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D05C31FD2CE0E076004761A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D05C31FE2CE0E076004761A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStudy_HyerinApp.swift; sourceTree = "<group>"; };
 		D09CC1DA2CD6330300EF4917 /* SwiftUIStudy_Hyerin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStudy_Hyerin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D09CC1DC2CD6330300EF4917 /* SwiftUIStudy_Hyerin */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUIStudy_Hyerin;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D09CC1D72CD6330300EF4917 /* Frameworks */ = {
@@ -29,10 +32,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D05C31FC2CE0E076004761A7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D05C32002CE0E076004761A7 /* SwiftUIStudy_Hyerin */ = {
+			isa = PBXGroup;
+			children = (
+				D05C31FC2CE0E076004761A7 /* Preview Content */,
+				D05C31FD2CE0E076004761A7 /* Assets.xcassets */,
+				D05C31FE2CE0E076004761A7 /* ContentView.swift */,
+				D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */,
+				D05C32062CE0E092004761A7 /* Week2 */,
+			);
+			path = SwiftUIStudy_Hyerin;
+			sourceTree = "<group>";
+		};
 		D09CC1D12CD6330300EF4917 = {
 			isa = PBXGroup;
 			children = (
-				D09CC1DC2CD6330300EF4917 /* SwiftUIStudy_Hyerin */,
+				D05C32002CE0E076004761A7 /* SwiftUIStudy_Hyerin */,
 				D09CC1DB2CD6330300EF4917 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +82,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D09CC1DC2CD6330300EF4917 /* SwiftUIStudy_Hyerin */,
 			);
 			name = SwiftUIStudy_Hyerin;
 			packageProductDependencies = (
@@ -109,6 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05C32012CE0E076004761A7 /* Preview Assets.xcassets in Resources */,
+				D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05C32032CE0E076004761A7 /* ContentView.swift in Sources */,
+				D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

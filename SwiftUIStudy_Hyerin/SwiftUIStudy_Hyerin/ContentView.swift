@@ -9,16 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "heart.fill")
-                .imageScale(.large)
-                .foregroundStyle(.pink)
-            Text("스유 스터디 개큰 시작 ㅋㅋ")
+//        HStack {
+//            Image(systemName: "heart.fill")
+//            Text("안녕하세요")
+//            Text("방어 먹고싶다")
+//        }
+//        VStack(alignment: .leading,
+//               spacing: 20) {
+//            Image(systemName: "heart.fill")
+//            Text("안녕하세요")
+//            Text("방어 먹고싶다")
+//        }
+        ZStack {
+            Rectangle()
+                .fill(Color.green)
+                .frame(width: 150, height: 150)
+                .zIndex(1)
+            Rectangle()
+                .fill(Color.yellow)
+                .frame(width: 150, height: 150)
+                .offset(x: 40, y: 40)
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
