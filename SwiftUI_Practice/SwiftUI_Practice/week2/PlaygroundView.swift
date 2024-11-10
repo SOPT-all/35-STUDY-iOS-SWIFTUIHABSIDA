@@ -15,6 +15,7 @@ struct PlaygroundView: View {
             
             VStack {
                 HeaderSection()
+                TagSection()
             }
             .padding(.horizontal, 16)
         }
@@ -35,6 +36,28 @@ struct HeaderSection: View {
                 .font(.title)
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
+        }
+    }
+}
+
+struct TagSection: View {
+    var body: some View {
+        HStack {
+            Text("35기 활동 중")
+                .font(.headline)
+                .padding(.horizontal, 10)
+                .foregroundColor(.gray10)
+                .frame(height: 35)
+                .background(Color.soptOrange)
+                .cornerRadius(50)
+            Text("34")
+                .font(.headline)
+                .foregroundColor(.white)
+                .frame(width: 35, height: 35)
+                .background(.gray03)
+                .cornerRadius(50)
+            
+            Spacer()
         }
     }
 }
