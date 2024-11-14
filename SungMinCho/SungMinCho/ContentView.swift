@@ -8,14 +8,64 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var firstTextFieldValue: String = ""
+    @State private var secondTextFieldValue: String = "미리 값 넣기"
+    @State private var secondTabShowingText: String = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            VStack(spacing: 20) {
+                Text("First Title")
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                TextField("PlaceHolder", text: $firstTextFieldValue)
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+                
+                if !firstTextFieldValue.isEmpty {
+                    Text("TextField Value : \(firstTextFieldValue)")
+                        .font(.headline)
+                        .foregroundColor(.blue)
+                }
+            }
+            .padding()
+            .tabItem {
+                Label("First", systemImage: "house.fill")
+            }
+            
+            VStack(spacing: 20) {
+                Text("Second Title")
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                HStack(spacing: 20) {
+                    TextField("PlaceHolder", text: $secondTextFieldValue)
+                        .frame(width: 200)
+                        .textFieldStyle(.roundedBorder)
+                        .padding()
+                    
+                    Button {
+                        secondTabShowingText = secondTextFieldValue
+                    } label: {
+                        Text("확인")
+                    }
+                    .frame(width: 40)
+                }
+                
+                if !secondTabShowingText.isEmpty {
+                    Text("TextField Value : \(secondTabShowingText)")
+                        .font(.headline)
+                        .foregroundColor(.blue)
+                }
+            }
+            .padding()
+            .tabItem {
+                Image(systemName: "person.fill")
+                Text("Second")
+            }
         }
-        .padding()
     }
 }
 
