@@ -15,7 +15,7 @@ struct CustomTabView: View {
           Image(systemName: "1.square.fill")
           Text("계산기")
         }
-      Text("2")
+      GridView()
         .tabItem {
           Image(systemName: "2.square.fill")
           Text("Second")
