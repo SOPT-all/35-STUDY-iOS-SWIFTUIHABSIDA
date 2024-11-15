@@ -48,12 +48,11 @@ struct GridView: View {
               .foregroundColor(
                 selectedSymbol == symbol ? .blue : .primary
               )
-              .cornerRadius(15)
+              .cornerRadius(50)
               .onTapGesture {
                 self.selectedSymbol = symbol
               }
           }
-          
         }
       }
       .padding()
