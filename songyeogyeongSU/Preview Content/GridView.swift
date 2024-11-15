@@ -63,10 +63,10 @@ struct GridView: View {
       Spacer()
         .frame(height: 30)
       
-      if let symbol = selectedSymbol {
         VStack {
           Text("Today:")
             .font(.headline)
+          if let symbol = selectedSymbol {
           Image(systemName: symbol)
             .font(.system(size: 50))
             .foregroundColor(.blue)
@@ -74,9 +74,9 @@ struct GridView: View {
             .background(Color.blue.opacity(0.1))
             .cornerRadius(50)
         }
-        .padding()
       }
-      
+      .padding()
+    
       Spacer()
     }
   }
