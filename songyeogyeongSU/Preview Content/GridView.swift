@@ -33,29 +33,32 @@ struct GridView: View {
   ]
   
   var body: some View {
-    ScrollView(.horizontal, showsIndicators: false) {
-      VStack {
-        LazyVGrid(columns: columns, spacing: 20) {
-          ForEach(symbols, id: \.self) { symbol in
-            Image(systemName: symbol)
-              .font(.system(size: 30))
-              .frame(width: 80, height: 80)
-              .background(
-                selectedSymbol == symbol ?
-                Color.blue.opacity(0.2) :
-                  Color.gray.opacity(0.1)
-              )
-              .foregroundColor(
-                selectedSymbol == symbol ? .blue : .primary
-              )
-              .cornerRadius(50)
-              .onTapGesture {
-                self.selectedSymbol = symbol
-              }
+    VStack {
+      ScrollView(.horizontal, showsIndicators: false) {
+        VStack {
+          LazyVGrid(columns: columns, spacing: 20) {
+            ForEach(symbols, id: \.self) { symbol in
+              Image(systemName: symbol)
+                .font(.system(size: 30))
+                .frame(width: 80, height: 80)
+                .background(
+                  selectedSymbol == symbol ?
+                  Color.blue.opacity(0.2) :
+                    Color.gray.opacity(0.1)
+                )
+                .foregroundColor(
+                  selectedSymbol == symbol ? .blue : .primary
+                )
+                .cornerRadius(50)
+                .onTapGesture {
+                  self.selectedSymbol = symbol
+                }
+            }
           }
         }
+        
+        .padding()
       }
-      .padding()
       
       Spacer()
         .frame(height: 30)
@@ -69,7 +72,7 @@ struct GridView: View {
             .foregroundColor(.blue)
             .frame(width: 100, height: 100)
             .background(Color.blue.opacity(0.1))
-            .cornerRadius(15)
+            .cornerRadius(50)
         }
         .padding()
       }
