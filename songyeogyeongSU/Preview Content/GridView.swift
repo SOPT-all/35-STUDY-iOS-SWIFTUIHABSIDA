@@ -57,7 +57,7 @@ struct GridView: View {
           }
         }
         
-        .padding()
+        .padding(.top, 100)
       }
       
       Spacer()
