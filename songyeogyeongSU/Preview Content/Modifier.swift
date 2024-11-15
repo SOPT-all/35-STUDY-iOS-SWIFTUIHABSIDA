@@ -15,7 +15,6 @@ struct ModifierExampleView: View {
         .padding()
         .background(Color.blue)
       
-      // 2. background() 및 cornerRadius() Modifier 적용
       Button("Rounded Button") {
         print("Button Pressed")
       }
