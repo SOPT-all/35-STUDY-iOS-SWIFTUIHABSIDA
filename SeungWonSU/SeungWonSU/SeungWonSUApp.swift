@@ -11,7 +11,7 @@ import SwiftUI
 struct SeungWonSUApp: App {
     var body: some Scene {
         WindowGroup {
-            Week2View()
+            week3View()
         }
     }
 }
