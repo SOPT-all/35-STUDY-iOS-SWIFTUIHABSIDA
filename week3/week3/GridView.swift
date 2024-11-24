@@ -32,8 +32,6 @@ struct GridViewEx: View {
     }
 }
 
-struct GridViewEx_Previews: PreviewProvider {
-    static var previews: some View {
-        GridViewEx()
-    }
+#Preview {
+    GridViewEx()
 }
