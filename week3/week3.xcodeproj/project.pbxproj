@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		87276C052CF34C6A008D35CE /* LazyHGridEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87276C042CF34C60008D35CE /* LazyHGridEx.swift */; };
 		87276C072CF35345008D35CE /* LazyVGridEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87276C062CF3533D008D35CE /* LazyVGridEx.swift */; };
+		87276C092CF35925008D35CE /* ScrollViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87276C082CF3591F008D35CE /* ScrollViewEx.swift */; };
+		87276C0B2CF3593A008D35CE /* ScrollViewEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87276C0A2CF35934008D35CE /* ScrollViewEx2.swift */; };
 		8757E9D62CE9FB7A00EBBCF4 /* week3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757E9D52CE9FB7A00EBBCF4 /* week3App.swift */; };
 		8757E9D82CE9FB7A00EBBCF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757E9D72CE9FB7A00EBBCF4 /* ContentView.swift */; };
 		8757E9DA2CE9FB7B00EBBCF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8757E9D92CE9FB7B00EBBCF4 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		87276C042CF34C60008D35CE /* LazyHGridEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridEx.swift; sourceTree = "<group>"; };
 		87276C062CF3533D008D35CE /* LazyVGridEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridEx.swift; sourceTree = "<group>"; };
+		87276C082CF3591F008D35CE /* ScrollViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewEx.swift; sourceTree = "<group>"; };
+		87276C0A2CF35934008D35CE /* ScrollViewEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewEx2.swift; sourceTree = "<group>"; };
 		8757E9D22CE9FB7A00EBBCF4 /* week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8757E9D52CE9FB7A00EBBCF4 /* week3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = week3App.swift; sourceTree = "<group>"; };
 		8757E9D72CE9FB7A00EBBCF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				8757E9E32CE9FBA500EBBCF4 /* GridView.swift */,
 				87276C042CF34C60008D35CE /* LazyHGridEx.swift */,
 				87276C062CF3533D008D35CE /* LazyVGridEx.swift */,
+				87276C082CF3591F008D35CE /* ScrollViewEx.swift */,
+				87276C0A2CF35934008D35CE /* ScrollViewEx2.swift */,
 				8757E9D92CE9FB7B00EBBCF4 /* Assets.xcassets */,
 				8757E9DB2CE9FB7B00EBBCF4 /* Preview Content */,
 			);
@@ -148,9 +154,11 @@
 			files = (
 				8757E9D82CE9FB7A00EBBCF4 /* ContentView.swift in Sources */,
 				87276C072CF35345008D35CE /* LazyVGridEx.swift in Sources */,
+				87276C092CF35925008D35CE /* ScrollViewEx.swift in Sources */,
 				8757E9D62CE9FB7A00EBBCF4 /* week3App.swift in Sources */,
 				8757E9E42CE9FBA500EBBCF4 /* GridView.swift in Sources */,
 				87276C052CF34C6A008D35CE /* LazyHGridEx.swift in Sources */,
+				87276C0B2CF3593A008D35CE /* ScrollViewEx2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
