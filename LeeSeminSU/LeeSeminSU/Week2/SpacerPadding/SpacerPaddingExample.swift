@@ -34,3 +34,7 @@ struct SpacerPaddingExample: View {
             .border(.blue)
     }
 }
+
+#Preview {
+    SpacerPaddingExample()
+}

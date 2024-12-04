@@ -31,3 +31,7 @@ struct VStackHStackExample: View {
         
     }
 }
+
+#Preview {
+    VStackHStackExample()
+}

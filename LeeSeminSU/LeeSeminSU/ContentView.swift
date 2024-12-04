@@ -12,11 +12,8 @@ struct ContentView: View {
         
 //        VStackHStackExample()
 //        ZStackExampleView()
-        
 //        ComponentExample()
-        
 //        SpacerPaddingExample()
-        
         ModifierExample()
     }
 }
