@@ -28,3 +28,7 @@ struct ZStackExampleView: View {
         }
     }
 }
+
+#Preview {
+    ZStackExampleView()
+}

@@ -60,3 +60,7 @@ struct ComponentExample: View {
         }
     }
 }
+
+#Preview {
+    ComponentExample()
+}

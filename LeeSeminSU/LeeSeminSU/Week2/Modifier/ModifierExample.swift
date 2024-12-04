@@ -44,3 +44,8 @@ struct ModifierExample: View {
         .padding()
     }
 }
+
+#Preview {
+    ModifierExample()
+}
+
