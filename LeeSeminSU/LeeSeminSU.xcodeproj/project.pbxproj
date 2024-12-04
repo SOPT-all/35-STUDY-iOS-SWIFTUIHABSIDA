@@ -18,6 +18,7 @@
 		76DFF9372CD7B4F200C373C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DFF9362CD7B4F200C373C3 /* Preview Assets.xcassets */; };
 		76FC2B712D00ABB600F10EE1 /* GridViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B702D00ABB600F10EE1 /* GridViewExample.swift */; };
 		76FC2B732D00AC0000F10EE1 /* ScrollViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B722D00AC0000F10EE1 /* ScrollViewExample.swift */; };
+		76FC2B762D00B3C000F10EE1 /* StateExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B752D00B3C000F10EE1 /* StateExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		76DFF9362CD7B4F200C373C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76FC2B702D00ABB600F10EE1 /* GridViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewExample.swift; sourceTree = "<group>"; };
 		76FC2B722D00AC0000F10EE1 /* ScrollViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewExample.swift; sourceTree = "<group>"; };
+		76FC2B752D00B3C000F10EE1 /* StateExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		76DFF92E2CD7B4F100C373C3 /* LeeSeminSU */ = {
 			isa = PBXGroup;
 			children = (
+				76FC2B742D00B37D00F10EE1 /* Week4 */,
 				76FC2B6F2D00AB7E00F10EE1 /* Week3 */,
 				76FC2DD82CE06C37000B329B /* Week2 */,
 				76DFF92F2CD7B4F100C373C3 /* LeeSeminSUApp.swift */,
@@ -114,6 +117,14 @@
 				76FC2B722D00AC0000F10EE1 /* ScrollViewExample.swift */,
 			);
 			path = Week3;
+			sourceTree = "<group>";
+		};
+		76FC2B742D00B37D00F10EE1 /* Week4 */ = {
+			isa = PBXGroup;
+			children = (
+				76FC2B752D00B3C000F10EE1 /* StateExample.swift */,
+			);
+			path = Week4;
 			sourceTree = "<group>";
 		};
 		76FC2DD82CE06C37000B329B /* Week2 */ = {
@@ -206,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FC2B762D00B3C000F10EE1 /* StateExample.swift in Sources */,
 				76FC2B732D00AC0000F10EE1 /* ScrollViewExample.swift in Sources */,
 				76DFF9322CD7B4F100C373C3 /* ContentView.swift in Sources */,
 				76DFF9302CD7B4F100C373C3 /* LeeSeminSUApp.swift in Sources */,
