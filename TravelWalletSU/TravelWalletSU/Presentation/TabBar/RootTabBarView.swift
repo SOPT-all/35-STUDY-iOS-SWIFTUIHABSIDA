@@ -23,7 +23,7 @@ struct RootTabBarView: View {
         ZStack {
             TabView(selection: $selected) {
                 NavigationStack {
-                    Text("Pay")
+                    MainView()
                 }
                 .tag(Tab.pay)
                 
