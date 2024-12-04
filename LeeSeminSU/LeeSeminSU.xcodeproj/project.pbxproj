@@ -21,6 +21,7 @@
 		76FC2B762D00B3C000F10EE1 /* StateExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B752D00B3C000F10EE1 /* StateExample.swift */; };
 		76FC2B792D00B7E300F10EE1 /* BindingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B782D00B7E300F10EE1 /* BindingExample.swift */; };
 		76FC2B7B2D00BA2800F10EE1 /* ObservedObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B7A2D00BA2800F10EE1 /* ObservedObjectExample.swift */; };
+		76FC2B7D2D00C0C700F10EE1 /* EnvironmentObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B7C2D00C0C700F10EE1 /* EnvironmentObjectExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		76FC2B752D00B3C000F10EE1 /* StateExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateExample.swift; sourceTree = "<group>"; };
 		76FC2B782D00B7E300F10EE1 /* BindingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExample.swift; sourceTree = "<group>"; };
 		76FC2B7A2D00BA2800F10EE1 /* ObservedObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectExample.swift; sourceTree = "<group>"; };
+		76FC2B7C2D00C0C700F10EE1 /* EnvironmentObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				76FC2B752D00B3C000F10EE1 /* StateExample.swift */,
 				76FC2B782D00B7E300F10EE1 /* BindingExample.swift */,
 				76FC2B7A2D00BA2800F10EE1 /* ObservedObjectExample.swift */,
+				76FC2B7C2D00C0C700F10EE1 /* EnvironmentObjectExample.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				76FC2B792D00B7E300F10EE1 /* BindingExample.swift in Sources */,
 				76DFF9302CD7B4F100C373C3 /* LeeSeminSUApp.swift in Sources */,
 				769FAB262CE1157A00785E3D /* SpacerPaddingExample.swift in Sources */,
+				76FC2B7D2D00C0C700F10EE1 /* EnvironmentObjectExample.swift in Sources */,
 				769FAB292CE115B700785E3D /* ModifierExample.swift in Sources */,
 				76BD461B2CE10C9F00E215FE /* ComponentExample.swift in Sources */,
 				76FC2B712D00ABB600F10EE1 /* GridViewExample.swift in Sources */,
