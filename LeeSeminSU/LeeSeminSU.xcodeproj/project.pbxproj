@@ -24,6 +24,7 @@
 		76FC2B7D2D00C0C700F10EE1 /* EnvironmentObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B7C2D00C0C700F10EE1 /* EnvironmentObjectExample.swift */; };
 		76FC2B852D00C49900F10EE1 /* FirstNavigationViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B842D00C49900F10EE1 /* FirstNavigationViewExample.swift */; };
 		76FC2B872D00C4A100F10EE1 /* SecondNavigationViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B862D00C4A100F10EE1 /* SecondNavigationViewExample.swift */; };
+		76FC2B8A2D00CA4200F10EE1 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B892D00CA4200F10EE1 /* TabViewExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		76FC2B7C2D00C0C700F10EE1 /* EnvironmentObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectExample.swift; sourceTree = "<group>"; };
 		76FC2B842D00C49900F10EE1 /* FirstNavigationViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNavigationViewExample.swift; sourceTree = "<group>"; };
 		76FC2B862D00C4A100F10EE1 /* SecondNavigationViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavigationViewExample.swift; sourceTree = "<group>"; };
+		76FC2B892D00CA4200F10EE1 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		76FC2B742D00B37D00F10EE1 /* Week4 */ = {
 			isa = PBXGroup;
 			children = (
+				76FC2B882D00CA2400F10EE1 /* TabView */,
 				76FC2B832D00C47B00F10EE1 /* Navigation */,
 				76FC2B772D00B7D000F10EE1 /* State */,
 			);
@@ -156,6 +159,14 @@
 				76FC2B862D00C4A100F10EE1 /* SecondNavigationViewExample.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		76FC2B882D00CA2400F10EE1 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				76FC2B892D00CA4200F10EE1 /* TabViewExample.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 		76FC2DD82CE06C37000B329B /* Week2 */ = {
@@ -261,6 +272,7 @@
 				76FC2B872D00C4A100F10EE1 /* SecondNavigationViewExample.swift in Sources */,
 				76BD461B2CE10C9F00E215FE /* ComponentExample.swift in Sources */,
 				76FC2B712D00ABB600F10EE1 /* GridViewExample.swift in Sources */,
+				76FC2B8A2D00CA4200F10EE1 /* TabViewExample.swift in Sources */,
 				76BD46132CE103C300E215FE /* ZStackExample.swift in Sources */,
 				76BD46112CE103AB00E215FE /* VStackHStackExample.swift in Sources */,
 			);
