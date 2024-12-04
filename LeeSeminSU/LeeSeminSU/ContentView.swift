@@ -9,15 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
+//        Week2
 //        VStackHStackExample()
 //        ZStackExampleView()
 //        ComponentExample()
 //        SpacerPaddingExample()
 //        ModifierExample()
         
+//        Week3
 //        GridViewExample()
-        ScrollViewExample()
+//        ScrollViewExample()
+        
+//        Week4
+//        StateExample()
+//        BindingExample()
+        ObservedObjectExample()
     }
 }
 
