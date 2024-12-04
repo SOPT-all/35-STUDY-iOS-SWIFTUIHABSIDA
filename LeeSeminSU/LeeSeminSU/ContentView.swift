@@ -23,7 +23,9 @@ struct ContentView: View {
 //        Week4
 //        StateExample()
 //        BindingExample()
-        ObservedObjectExample()
+//        ObservedObjectExample()
+//        FirstNavigationViewExample()
+        SheetModifierExample()
     }
 }
 
