@@ -18,6 +18,14 @@
 		76DFF9372CD7B4F200C373C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DFF9362CD7B4F200C373C3 /* Preview Assets.xcassets */; };
 		76FC2B712D00ABB600F10EE1 /* GridViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B702D00ABB600F10EE1 /* GridViewExample.swift */; };
 		76FC2B732D00AC0000F10EE1 /* ScrollViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B722D00AC0000F10EE1 /* ScrollViewExample.swift */; };
+		76FC2B762D00B3C000F10EE1 /* StateExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B752D00B3C000F10EE1 /* StateExample.swift */; };
+		76FC2B792D00B7E300F10EE1 /* BindingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B782D00B7E300F10EE1 /* BindingExample.swift */; };
+		76FC2B7B2D00BA2800F10EE1 /* ObservedObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B7A2D00BA2800F10EE1 /* ObservedObjectExample.swift */; };
+		76FC2B7D2D00C0C700F10EE1 /* EnvironmentObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B7C2D00C0C700F10EE1 /* EnvironmentObjectExample.swift */; };
+		76FC2B852D00C49900F10EE1 /* FirstNavigationViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B842D00C49900F10EE1 /* FirstNavigationViewExample.swift */; };
+		76FC2B872D00C4A100F10EE1 /* SecondNavigationViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B862D00C4A100F10EE1 /* SecondNavigationViewExample.swift */; };
+		76FC2B8A2D00CA4200F10EE1 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B892D00CA4200F10EE1 /* TabViewExample.swift */; };
+		76FC2B8D2D00CC6600F10EE1 /* SheetModifierExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B8C2D00CC6600F10EE1 /* SheetModifierExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +41,14 @@
 		76DFF9362CD7B4F200C373C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76FC2B702D00ABB600F10EE1 /* GridViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewExample.swift; sourceTree = "<group>"; };
 		76FC2B722D00AC0000F10EE1 /* ScrollViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewExample.swift; sourceTree = "<group>"; };
+		76FC2B752D00B3C000F10EE1 /* StateExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateExample.swift; sourceTree = "<group>"; };
+		76FC2B782D00B7E300F10EE1 /* BindingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExample.swift; sourceTree = "<group>"; };
+		76FC2B7A2D00BA2800F10EE1 /* ObservedObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectExample.swift; sourceTree = "<group>"; };
+		76FC2B7C2D00C0C700F10EE1 /* EnvironmentObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectExample.swift; sourceTree = "<group>"; };
+		76FC2B842D00C49900F10EE1 /* FirstNavigationViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNavigationViewExample.swift; sourceTree = "<group>"; };
+		76FC2B862D00C4A100F10EE1 /* SecondNavigationViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavigationViewExample.swift; sourceTree = "<group>"; };
+		76FC2B892D00CA4200F10EE1 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
+		76FC2B8C2D00CC6600F10EE1 /* SheetModifierExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModifierExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +105,7 @@
 		76DFF92E2CD7B4F100C373C3 /* LeeSeminSU */ = {
 			isa = PBXGroup;
 			children = (
+				76FC2B742D00B37D00F10EE1 /* Week4 */,
 				76FC2B6F2D00AB7E00F10EE1 /* Week3 */,
 				76FC2DD82CE06C37000B329B /* Week2 */,
 				76DFF92F2CD7B4F100C373C3 /* LeeSeminSUApp.swift */,
@@ -114,6 +131,53 @@
 				76FC2B722D00AC0000F10EE1 /* ScrollViewExample.swift */,
 			);
 			path = Week3;
+			sourceTree = "<group>";
+		};
+		76FC2B742D00B37D00F10EE1 /* Week4 */ = {
+			isa = PBXGroup;
+			children = (
+				76FC2B8B2D00CC4D00F10EE1 /* SheetModifier */,
+				76FC2B882D00CA2400F10EE1 /* TabView */,
+				76FC2B832D00C47B00F10EE1 /* Navigation */,
+				76FC2B772D00B7D000F10EE1 /* State */,
+			);
+			path = Week4;
+			sourceTree = "<group>";
+		};
+		76FC2B772D00B7D000F10EE1 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				76FC2B752D00B3C000F10EE1 /* StateExample.swift */,
+				76FC2B782D00B7E300F10EE1 /* BindingExample.swift */,
+				76FC2B7A2D00BA2800F10EE1 /* ObservedObjectExample.swift */,
+				76FC2B7C2D00C0C700F10EE1 /* EnvironmentObjectExample.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		76FC2B832D00C47B00F10EE1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				76FC2B842D00C49900F10EE1 /* FirstNavigationViewExample.swift */,
+				76FC2B862D00C4A100F10EE1 /* SecondNavigationViewExample.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		76FC2B882D00CA2400F10EE1 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				76FC2B892D00CA4200F10EE1 /* TabViewExample.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		76FC2B8B2D00CC4D00F10EE1 /* SheetModifier */ = {
+			isa = PBXGroup;
+			children = (
+				76FC2B8C2D00CC6600F10EE1 /* SheetModifierExample.swift */,
+			);
+			path = SheetModifier;
 			sourceTree = "<group>";
 		};
 		76FC2DD82CE06C37000B329B /* Week2 */ = {
@@ -206,13 +270,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FC2B852D00C49900F10EE1 /* FirstNavigationViewExample.swift in Sources */,
+				76FC2B762D00B3C000F10EE1 /* StateExample.swift in Sources */,
 				76FC2B732D00AC0000F10EE1 /* ScrollViewExample.swift in Sources */,
 				76DFF9322CD7B4F100C373C3 /* ContentView.swift in Sources */,
+				76FC2B7B2D00BA2800F10EE1 /* ObservedObjectExample.swift in Sources */,
+				76FC2B792D00B7E300F10EE1 /* BindingExample.swift in Sources */,
 				76DFF9302CD7B4F100C373C3 /* LeeSeminSUApp.swift in Sources */,
 				769FAB262CE1157A00785E3D /* SpacerPaddingExample.swift in Sources */,
+				76FC2B8D2D00CC6600F10EE1 /* SheetModifierExample.swift in Sources */,
+				76FC2B7D2D00C0C700F10EE1 /* EnvironmentObjectExample.swift in Sources */,
 				769FAB292CE115B700785E3D /* ModifierExample.swift in Sources */,
+				76FC2B872D00C4A100F10EE1 /* SecondNavigationViewExample.swift in Sources */,
 				76BD461B2CE10C9F00E215FE /* ComponentExample.swift in Sources */,
 				76FC2B712D00ABB600F10EE1 /* GridViewExample.swift in Sources */,
+				76FC2B8A2D00CA4200F10EE1 /* TabViewExample.swift in Sources */,
 				76BD46132CE103C300E215FE /* ZStackExample.swift in Sources */,
 				76BD46112CE103AB00E215FE /* VStackHStackExample.swift in Sources */,
 			);
