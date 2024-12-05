@@ -10,22 +10,9 @@
 		0D352B102CD22BD6004E0B5A /* SwiftUI_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0D514C7E2D012AA600C28735 /* Exceptions for "SwiftUI_Practice" folder in "SwiftUI_Practice" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"SwiftUI-Practice-Info.plist",
-			);
-			target = 0D352B0F2CD22BD6004E0B5A /* SwiftUI_Practice */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0D352B122CD22BD6004E0B5A /* SwiftUI_Practice */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				0D514C7E2D012AA600C28735 /* Exceptions for "SwiftUI_Practice" folder in "SwiftUI_Practice" target */,
-			);
 			path = SwiftUI_Practice;
 			sourceTree = "<group>";
 		};
