@@ -93,6 +93,9 @@ struct TravelWalletMainView: View {
 
 // 메인 화면
 struct PayView: View {
+    
+    @State private var isAdBannerVisible = true
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 22) {
@@ -104,8 +107,10 @@ struct PayView: View {
                 walletSection
                     .padding(.horizontal, 16)
                 // 3. 광고 배너
-                adBanner
-                    .padding(.horizontal, 16)
+                if isAdBannerVisible {
+                    adBanner
+                        .padding(.horizontal, 16)
+                }
                 // 4. 기능 버튼 섹션
                 featureButtons
                 Spacer()
@@ -225,7 +230,9 @@ struct PayView: View {
                     .font(.custom("SUIT-Bold", size: 13))
             }
             Spacer()
-            Button(action: {}) {
+            Button(action: {
+                isAdBannerVisible.toggle()
+            }) {
                 Image("close_icon")
                     .foregroundColor(.gray)
             }
