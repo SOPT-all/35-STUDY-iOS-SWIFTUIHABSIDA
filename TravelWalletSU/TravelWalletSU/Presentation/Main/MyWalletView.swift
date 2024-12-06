@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MyWalletView: View {
+    
+    // MARK: - Hierarchy
+    
     var body: some View {
         VStack(spacing: 0) {
             myWalletHeader
@@ -22,7 +25,9 @@ struct MyWalletView: View {
         .clipShape(RoundedRectangle(cornerRadius: 11))
     }
     
-    var myWalletHeader: some View {
+    // MARK: - Components
+    
+    private var myWalletHeader: some View {
         HStack(spacing: 9) {
             Text("내 지갑")
                 .font(.system(size: 18, weight: .semibold))
@@ -50,7 +55,7 @@ struct MyWalletView: View {
         }
     }
     
-    var chargeButton: some View {
+    private var chargeButton: some View {
         Button {
             print("충전하기 버튼")
         } label: {
@@ -70,14 +75,14 @@ struct MyWalletView: View {
         }
     }
     
-    var notChargedView: some View {
+    private var notChargedView: some View {
         Text("아직 충전된 외화가 없습니다.")
             .font(.system(size: 13, weight: .medium))
             .foregroundStyle(Color(hex: "616161"))
             .frame(height: 104)
     }
     
-    var chargedForeignCurrencyView: some View {
+    private var chargedForeignCurrencyView: some View {
         VStack(spacing: 0) {
             HStack(spacing: 10) {
                 Image(.usdIcon)

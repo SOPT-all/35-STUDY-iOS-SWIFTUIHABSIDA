@@ -16,6 +16,7 @@ struct MainView: View {
             VStack(spacing: 20) {
                 platinumCardView()
                 MyWalletView()
+                KakaoBankView()
             }
             .padding(.top, 20)
             .padding(.horizontal, 16)
@@ -31,7 +32,9 @@ struct MainView: View {
 
     }
     
-    var leftNavigationBarItem: some View {
+    // MARK: - Components
+    
+    private var leftNavigationBarItem: some View {
         HStack(spacing: 14) {
             Text("홈")
                 .font(.system(size: 22, weight: .bold))
@@ -42,7 +45,7 @@ struct MainView: View {
         }
     }
     
-    var rightNavigationBarItem: some View {
+    private var rightNavigationBarItem: some View {
         HStack(spacing: 20) {
             Button {
                 print("qr Tapped")
