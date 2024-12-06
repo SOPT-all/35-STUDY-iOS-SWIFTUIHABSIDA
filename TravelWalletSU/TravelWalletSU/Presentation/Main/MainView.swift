@@ -12,6 +12,9 @@ struct MainView: View {
     // MARK: - Properties
     
     @State private var isKakaoBankViewVisible: Bool = true
+    @State private var isChargeViewPresented: Bool = false
+    @State private var isMoneyCharged: Bool = false
+    @State private var chargedAmount: String = ""
     
     // MARK: - Hierarchy
     
@@ -19,10 +22,17 @@ struct MainView: View {
         ScrollView {
             VStack(spacing: 20) {
                 platinumCardView()
-                MyWalletView()
+                
+                MyWalletView(
+                    isChargeViewPresented: $isChargeViewPresented,
+                    isMoneyCharged: $isMoneyCharged,
+                    chargedAmount: $chargedAmount
+                )
+                
                 if isKakaoBankViewVisible {
                     KakaoBankView(isKakaoBankViewVisible: $isKakaoBankViewVisible)
                 }
+                
                 listCardView
             }
             .padding(.top, 20)
@@ -36,6 +46,15 @@ struct MainView: View {
         } rightView: {
             rightNavigationBarItem
         }
+        .fullScreenCover(isPresented: $isChargeViewPresented) {
+            ChargeView(
+                isChargeViewPresented: $isChargeViewPresented,
+                isMoneyCharged: $isMoneyCharged,
+                chargedAmount: $chargedAmount
+            )
+        }
+
+
 
     }
     

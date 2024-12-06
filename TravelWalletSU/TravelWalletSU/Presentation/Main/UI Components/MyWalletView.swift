@@ -9,13 +9,24 @@ import SwiftUI
 
 struct MyWalletView: View {
     
+    // MARK: - Properties
+    
+    @Binding var isChargeViewPresented: Bool
+    @Binding var isMoneyCharged: Bool
+    @Binding var chargedAmount: String
+    
     // MARK: - Hierarchy
     
     var body: some View {
         VStack(spacing: 0) {
             myWalletHeader
             
-            chargedForeignCurrencyView
+//            isMoneyCharged ? charge
+            if isMoneyCharged {
+                chargedForeignCurrencyView
+            } else {
+                notChargedView
+            }
             
             chargeButton
         }
@@ -59,6 +70,7 @@ struct MyWalletView: View {
     private var chargeButton: some View {
         Button {
             print("충전하기 버튼")
+            isChargeViewPresented.toggle()
         } label: {
             HStack(spacing: 0) {
                 Spacer()
@@ -95,7 +107,7 @@ struct MyWalletView: View {
                 
                 Spacer()
                 
-                Text("$800") // 바인딩 필요
+                Text("$\(chargedAmount)") // 바인딩 필요
                     .font(.system(size: 15, weight: .semibold))
             }
             .padding(.leading, 22)
@@ -109,6 +121,6 @@ struct MyWalletView: View {
     
 }
 
-#Preview {
-    MyWalletView()
-}
+//#Preview {
+//    MyWalletView()
+//}

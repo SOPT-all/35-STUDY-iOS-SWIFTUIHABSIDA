@@ -44,7 +44,7 @@ struct RootTabBarView: View {
                     .tag(Tab.travel)
                     
                     NavigationStack {
-                        Text("myPage")
+                        Text("my page")
                     }
                     .tag(Tab.myPage)
                 }
