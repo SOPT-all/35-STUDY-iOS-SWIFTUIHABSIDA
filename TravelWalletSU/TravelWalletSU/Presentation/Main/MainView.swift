@@ -17,9 +17,10 @@ struct MainView: View {
                 platinumCardView()
                 MyWalletView()
                 KakaoBankView()
+                listCardView
             }
             .padding(.top, 20)
-            .padding(.horizontal, 16)
+
             
         }
         .background(Color(hex: "EEEEF0"))
@@ -64,6 +65,19 @@ struct MainView: View {
             }
         }
     }
+    
+    private var listCardView: some View {
+        ScrollView(.horizontal) {
+            HStack(spacing: 7) {
+                ListCardColumn(listCardType: .n)
+                ListCardColumn(listCardType: .send)
+                ListCardColumn(listCardType: .exchange)
+            }
+            .padding(.horizontal, 16)
+        }
+        .scrollIndicators(.hidden)
+    }
+    
 }
 
 #Preview {

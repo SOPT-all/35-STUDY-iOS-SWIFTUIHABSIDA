@@ -23,6 +23,7 @@ struct MyWalletView: View {
         .padding(.horizontal, 16)
         .background(Color(hex: "FFFFFF"))
         .clipShape(RoundedRectangle(cornerRadius: 11))
+        .padding(.horizontal, 16)
     }
     
     // MARK: - Components

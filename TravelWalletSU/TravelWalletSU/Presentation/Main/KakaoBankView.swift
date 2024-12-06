@@ -23,6 +23,7 @@ struct KakaoBankView: View {
         .padding(.trailing, 25)
         .background(Color(hex: "FFFFFF"))
         .clipShape(RoundedRectangle(cornerRadius: 15))
+        .padding(.horizontal, 16)
     }
     
     // MARK: - Components

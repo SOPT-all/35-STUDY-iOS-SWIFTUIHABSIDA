@@ -20,6 +20,7 @@ struct platinumCardView: View {
             
         }
         .padding(16)
+        
         .background(
             LinearGradient(
                 gradient: Gradient(
@@ -33,6 +34,7 @@ struct platinumCardView: View {
             )
         )
         .clipShape(RoundedRectangle(cornerRadius: 15))
+        .padding(.horizontal, 16)
     }
     
     // MARK: - Components
