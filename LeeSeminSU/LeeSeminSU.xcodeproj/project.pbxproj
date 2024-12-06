@@ -26,6 +26,7 @@
 		76FC2B872D00C4A100F10EE1 /* SecondNavigationViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B862D00C4A100F10EE1 /* SecondNavigationViewExample.swift */; };
 		76FC2B8A2D00CA4200F10EE1 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B892D00CA4200F10EE1 /* TabViewExample.swift */; };
 		76FC2B8D2D00CC6600F10EE1 /* SheetModifierExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B8C2D00CC6600F10EE1 /* SheetModifierExample.swift */; };
+		76FC2B902D00D40D00F10EE1 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC2B8F2D00D40D00F10EE1 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		76FC2B862D00C4A100F10EE1 /* SecondNavigationViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavigationViewExample.swift; sourceTree = "<group>"; };
 		76FC2B892D00CA4200F10EE1 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
 		76FC2B8C2D00CC6600F10EE1 /* SheetModifierExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModifierExample.swift; sourceTree = "<group>"; };
+		76FC2B8F2D00D40D00F10EE1 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		76DFF92E2CD7B4F100C373C3 /* LeeSeminSU */ = {
 			isa = PBXGroup;
 			children = (
+				76FC2B8E2D00D3D400F10EE1 /* Week5 - TravelWallet */,
 				76FC2B742D00B37D00F10EE1 /* Week4 */,
 				76FC2B6F2D00AB7E00F10EE1 /* Week3 */,
 				76FC2DD82CE06C37000B329B /* Week2 */,
@@ -178,6 +181,14 @@
 				76FC2B8C2D00CC6600F10EE1 /* SheetModifierExample.swift */,
 			);
 			path = SheetModifier;
+			sourceTree = "<group>";
+		};
+		76FC2B8E2D00D3D400F10EE1 /* Week5 - TravelWallet */ = {
+			isa = PBXGroup;
+			children = (
+				76FC2B8F2D00D40D00F10EE1 /* Main.swift */,
+			);
+			path = "Week5 - TravelWallet";
 			sourceTree = "<group>";
 		};
 		76FC2DD82CE06C37000B329B /* Week2 */ = {
@@ -270,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FC2B902D00D40D00F10EE1 /* Main.swift in Sources */,
 				76FC2B852D00C49900F10EE1 /* FirstNavigationViewExample.swift in Sources */,
 				76FC2B762D00B3C000F10EE1 /* StateExample.swift in Sources */,
 				76FC2B732D00AC0000F10EE1 /* ScrollViewExample.swift in Sources */,
