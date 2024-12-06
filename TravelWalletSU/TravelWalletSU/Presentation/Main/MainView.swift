@@ -12,7 +12,15 @@ struct MainView: View {
     // MARK: - Hierarchy
     
     var body: some View {
-        Text("dh®")
+        ScrollView {
+            VStack(spacing: 0) {
+                platinumCardView()
+                    .padding(.top, 20)
+                    .padding(.horizontal, 16)
+            }
+            
+        }
+        .background(Color(hex: "EEEEF0"))
         .customNavigationBar {
             leftNavigationBarItem
             
