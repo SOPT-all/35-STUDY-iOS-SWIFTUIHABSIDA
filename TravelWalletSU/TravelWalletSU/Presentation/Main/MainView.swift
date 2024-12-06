@@ -9,6 +9,10 @@ import SwiftUI
 
 struct MainView: View {
     
+    // MARK: - Properties
+    
+    @State private var isKakaoBankViewVisible: Bool = true
+    
     // MARK: - Hierarchy
     
     var body: some View {
@@ -16,7 +20,9 @@ struct MainView: View {
             VStack(spacing: 20) {
                 platinumCardView()
                 MyWalletView()
-                KakaoBankView()
+                if isKakaoBankViewVisible {
+                    KakaoBankView(isKakaoBankViewVisible: $isKakaoBankViewVisible)
+                }
                 listCardView
             }
             .padding(.top, 20)
