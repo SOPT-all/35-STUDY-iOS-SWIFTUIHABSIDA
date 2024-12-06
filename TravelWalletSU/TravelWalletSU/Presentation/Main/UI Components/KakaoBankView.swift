@@ -49,6 +49,7 @@ struct KakaoBankView: View {
     private var deleteButton: some View {
         Button {
             print("x 버튼")
+            // 카카오뱅크 뷰 없어지도록 구현
         } label: {
             Image(.xIcon)
                 .resizable()
