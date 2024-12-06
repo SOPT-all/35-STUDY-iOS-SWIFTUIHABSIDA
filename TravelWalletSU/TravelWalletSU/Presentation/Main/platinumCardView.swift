@@ -29,7 +29,7 @@ struct platinumCardView: View {
                 endPoint: .trailing
             )
         )
-        .cornerRadius(15)
+        .clipShape(RoundedRectangle(cornerRadius: 15))
     }
     
     var platinumCardImage: some View {

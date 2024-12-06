@@ -13,11 +13,12 @@ struct MainView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 0) {
+            VStack(spacing: 20) {
                 platinumCardView()
-                    .padding(.top, 20)
-                    .padding(.horizontal, 16)
+                MyWalletView()
             }
+            .padding(.top, 20)
+            .padding(.horizontal, 16)
             
         }
         .background(Color(hex: "EEEEF0"))
