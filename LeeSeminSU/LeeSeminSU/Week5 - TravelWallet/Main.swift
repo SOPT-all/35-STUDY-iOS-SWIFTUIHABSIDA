@@ -11,6 +11,7 @@ struct Main: View {
     var body: some View {
         TabView {
             VStack {
+                // 상단 네비게이션바
                 HStack {
                     Text("홈")
                         .font(.title2)
@@ -35,6 +36,7 @@ struct Main: View {
                 }
                 .padding()
                 
+                // 플래티늄 카드
                 HStack {
                     Image("platinumCard")
                     VStack(alignment: .leading, spacing: 5){
@@ -71,9 +73,52 @@ struct Main: View {
                             )
                         )
                 )
+                .padding(.bottom)
+                
+                // 내 지갑
+                HStack{
+                    VStack(spacing: 45) {
+                        HStack {
+                            Text("내 지갑")
+                                .font(.system(size: 18, weight: .semibold))
+                            Image("info")
+                            
+                            Spacer()
+                            
+                            Text("이용내역")
+                                .font(.system(size: 15, weight: .medium))
+                            Image("arrow")
+                                .padding(.leading, -13)
+                        }
+                        .padding(.horizontal, 5)
+                        
+                        Text("아직 충전된 외화가 없습니다.")
+                            .font(.system(size: 13))
+                            .foregroundColor(Color(hex: "#616161"))
+                        
+                        Button(action: {
+                        }) {
+                            Text("충전하기")
+                                .font(.system(size: 15, weight: .bold))
+                                .foregroundColor(.white)
+                                .frame(width: 302, height: 48)
+                                .background(Color(hex: "#0BAEFF"))
+                                .cornerRadius(12)
+                        }
+                    }
+                    .padding()
+                    .frame(width: 343, height: 228)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color(hex: "#FFFFFF"))
+                    )
+                }
+                
                 
                 Spacer()
             }
+            .background(Color(hex: "#F4F4F4"))
+            
             
             .tabItem {
                 Label("페이", image: "pay")
@@ -103,8 +148,7 @@ struct Main: View {
                 }
                 .disabled(true)
         }
-        .accentColor(Color(red: 0.43, green: 0.68, blue: 1))
-        .padding([.leading, .trailing], 15)
+        .accentColor(Color(hex: "#0BAEFF"))
     }
 }
 
