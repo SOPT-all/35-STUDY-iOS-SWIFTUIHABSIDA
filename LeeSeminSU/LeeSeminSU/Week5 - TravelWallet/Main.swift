@@ -61,7 +61,7 @@ struct Main: View {
                 .padding()
                 .frame(width: 343, height: 76)
                 .background(
-                    RoundedRectangle(cornerRadius: 20)
+                    RoundedRectangle(cornerRadius: 15)
                         .fill(
                             LinearGradient(
                                 gradient: Gradient(colors: [
@@ -109,10 +109,39 @@ struct Main: View {
                     .padding()
                     .frame(width: 343, height: 228)
                     .background(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: 15)
                             .fill(Color(hex: "#FFFFFF"))
                     )
                 }
+                .padding(.bottom)
+                
+                // 달러박스
+                HStack {
+                    HStack(spacing: 20) {
+                        Image("kakaoBank")
+                        
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text("카카오뱅크 이용중이시라면")
+                                .font(.system(size: 10))
+                            Text("달러박스를 연동해보세요!")
+                                .font(.system(size: 13, weight: .bold))
+                        }
+                    }
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Image("xmark")
+                    }
+                }
+                .padding()
+                .frame(width: 343, height: 66)
+                .background(
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(Color(hex: "#FFFFFF"))
+                )
                 
                 
                 Spacer()
