@@ -142,8 +142,17 @@ struct Main: View {
                     RoundedRectangle(cornerRadius: 15)
                         .fill(Color(hex: "#FFFFFF"))
                 )
+                .padding(.bottom)
                 
-                
+                // 수평 스크롤 카드
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        CardView(icon: "N", subtitle: "결제부터", title: "N빵하기")
+                        CardView(icon: "remit", subtitle: "친구에게", title: "송금하기")
+                        CardView(icon: "exchange", subtitle: "외화간", title: "환전하기")
+                    }
+                    .padding(.horizontal, 25)
+                }
                 Spacer()
             }
             .background(Color(hex: "#F4F4F4"))
@@ -179,6 +188,29 @@ struct Main: View {
         }
         .accentColor(Color(hex: "#0BAEFF"))
     }
+}
+
+@ViewBuilder
+func CardView(icon: String, subtitle: String, title: String) -> some View {
+    VStack(alignment: .leading) {
+        Image(icon)
+            .padding(7)
+        
+        Spacer()
+        
+        Text(subtitle)
+            .font(.system(size: 15))
+            .foregroundColor(Color(hex: "#616161"))
+            .padding(.leading, 7)
+            .padding(.bottom, 1)
+        Text(title)
+            .font(.system(size: 15, weight: .semibold))
+            .padding(.leading, 7)
+    }
+    .padding()
+    .frame(width: 131, height: 131, alignment: .leading)
+    .background(Color(hex: "FFFFFF"))
+    .cornerRadius(15)
 }
 
 
