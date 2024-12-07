@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Charge: View {
+    @State private var usdMoney: String = ""
+    @State private var krwMoney: String = "0원"
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -19,9 +22,18 @@ struct Charge: View {
             .padding(.bottom)
             .padding(.top, 70)
             
-            TextField("충전할 금액을 입력해주세요.", text: .constant(""))
+            TextField("충전할 금액을 입력해주세요.", text: $usdMoney)
+                .keyboardType(.decimalPad)
                 .padding(.leading)
                 .padding(.bottom, 40)
+                .onChange(of: usdMoney) { newValue in
+                    if let usd = Double(newValue) {
+                        let krw = usd * 1400
+                        krwMoney = "\(Int(krw))원"
+                    } else {
+                        krwMoney = "0원"
+                    }
+                }
             
             HStack {
                 Image("KOREA")
@@ -31,7 +43,7 @@ struct Charge: View {
             .padding(.leading)
             .padding(.bottom)
             
-            Text("0원")
+            Text(krwMoney)
                 .font(.system(size: 18, weight: .semibold))
                 .padding(.leading)
                 .padding(.bottom, 20)
