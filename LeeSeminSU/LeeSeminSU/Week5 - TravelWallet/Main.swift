@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Main: View {
+    @State private var isDollarBoxVisible = true
+    
     var body: some View {
         TabView {
             VStack {
@@ -116,33 +118,35 @@ struct Main: View {
                 .padding(.bottom)
                 
                 // 달러박스
-                HStack {
-                    HStack(spacing: 20) {
-                        Image("kakaoBank")
+                if isDollarBoxVisible {
+                    HStack {
+                        HStack(spacing: 20) {
+                            Image("kakaoBank")
+                            
+                            VStack(alignment: .leading, spacing: 5) {
+                                Text("카카오뱅크 이용중이시라면")
+                                    .font(.system(size: 10))
+                                Text("달러박스를 연동해보세요!")
+                                    .font(.system(size: 13, weight: .bold))
+                            }
+                        }
                         
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text("카카오뱅크 이용중이시라면")
-                                .font(.system(size: 10))
-                            Text("달러박스를 연동해보세요!")
-                                .font(.system(size: 13, weight: .bold))
+                        Spacer()
+                        
+                        Button(action: {
+                            isDollarBoxVisible = false
+                        }) {
+                            Image("xmark")
                         }
                     }
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        
-                    }) {
-                        Image("xmark")
-                    }
+                    .padding()
+                    .frame(width: 343, height: 66)
+                    .background(
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(Color(hex: "#FFFFFF"))
+                    )
+                    .padding(.bottom)
                 }
-                .padding()
-                .frame(width: 343, height: 66)
-                .background(
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color(hex: "#FFFFFF"))
-                )
-                .padding(.bottom)
                 
                 // 수평 스크롤 카드
                 ScrollView(.horizontal, showsIndicators: false) {
