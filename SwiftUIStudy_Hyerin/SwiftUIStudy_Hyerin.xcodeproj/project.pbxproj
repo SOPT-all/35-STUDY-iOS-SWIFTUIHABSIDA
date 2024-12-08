@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D039A3AC2D04EE6E00D071CB /* SUIT-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D039A3AB2D04EE6E00D071CB /* SUIT-SemiBold.otf */; };
+		D039A3AD2D04EE6E00D071CB /* SUIT-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D039A3AA2D04EE6E00D071CB /* SUIT-Medium.otf */; };
+		D039A3AE2D04EE6E00D071CB /* SUIT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D039A3A92D04EE6E00D071CB /* SUIT-Bold.otf */; };
+		D039A3B32D04F08100D071CB /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3B22D04F07B00D071CB /* FontLiterals.swift */; };
 		D05C32012CE0E076004761A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */; };
 		D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FD2CE0E076004761A7 /* Assets.xcassets */; };
 		D05C32032CE0E076004761A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FE2CE0E076004761A7 /* ContentView.swift */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D039A3A92D04EE6E00D071CB /* SUIT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Bold.otf"; sourceTree = "<group>"; };
+		D039A3AA2D04EE6E00D071CB /* SUIT-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Medium.otf"; sourceTree = "<group>"; };
+		D039A3AB2D04EE6E00D071CB /* SUIT-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-SemiBold.otf"; sourceTree = "<group>"; };
+		D039A3B22D04F07B00D071CB /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
 		D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D05C31FD2CE0E076004761A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05C31FE2CE0E076004761A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +54,9 @@
 		D039A3A82D04EE5800D071CB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				D039A3A92D04EE6E00D071CB /* SUIT-Bold.otf */,
+				D039A3AA2D04EE6E00D071CB /* SUIT-Medium.otf */,
+				D039A3AB2D04EE6E00D071CB /* SUIT-SemiBold.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -62,6 +73,7 @@
 		D039A3B12D04F06900D071CB /* Literals */ = {
 			isa = PBXGroup;
 			children = (
+				D039A3B22D04F07B00D071CB /* FontLiterals.swift */,
 			);
 			path = Literals;
 			sourceTree = "<group>";
@@ -172,6 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D05C32012CE0E076004761A7 /* Preview Assets.xcassets in Resources */,
+				D039A3AC2D04EE6E00D071CB /* SUIT-SemiBold.otf in Resources */,
+				D039A3AD2D04EE6E00D071CB /* SUIT-Medium.otf in Resources */,
+				D039A3AE2D04EE6E00D071CB /* SUIT-Bold.otf in Resources */,
 				D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D039A3B32D04F08100D071CB /* FontLiterals.swift in Sources */,
 				D05C32032CE0E076004761A7 /* ContentView.swift in Sources */,
 				D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */,
 				D05C32082CE0E2E2004761A7 /* ComponentPracticeView.swift in Sources */,
@@ -322,6 +338,7 @@
 				DEVELOPMENT_TEAM = X395BM5WW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUIStudy-Hyerin-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,6 +368,7 @@
 				DEVELOPMENT_TEAM = X395BM5WW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUIStudy-Hyerin-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
