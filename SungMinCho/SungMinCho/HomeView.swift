@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State private var isDollorBoxHidden: Bool = false
+    
     var body: some View {
         TabView {
             Tab {
@@ -75,9 +77,12 @@ struct HomeView: View {
     }
     
     private var payView: some View {
-        VStack {
+        VStack(spacing: 20) {
             announceView
             myWalletView
+            if !isDollorBoxHidden {
+                dollorBoxView
+            }
         }
         .frame(width: 343)
     }
@@ -91,7 +96,8 @@ struct HomeView: View {
                         .fill(Color.cardBackground)
                         .frame(width: 44, height: 44)
                 )
-                .padding()
+                .padding(.leading, 16)
+                .padding(.trailing)
             VStack(alignment: .leading) {
                 Text("드디어 나왔다!")
                     .font(.system(size: 13))
@@ -159,6 +165,36 @@ struct HomeView: View {
         .padding()
         .background(Color.white)
         .frame(height: 228)
+        .clipShape(RoundedRectangle(cornerRadius: 15))
+    }
+    
+    private var dollorBoxView: some View {
+        HStack {
+            Image(.kakaoBank)
+                .scaledToFit()
+                .padding(.leading, 10)
+                .padding(.trailing)
+            VStack(alignment: .leading) {
+                Text("카카오뱅크 이용중이시라면")
+                    .font(.system(size: 10))
+                Spacer()
+                Text("달러박스를 연동해보세요!")
+                    .font(.system(size: 13, weight: .bold))
+            }
+            Spacer()
+            Button {
+                self.isDollorBoxHidden = true
+            } label: {
+                Image(systemName: "xmark")
+                    .resizable()
+                    .frame(width: 14, height: 14)
+                    .foregroundStyle(.black)
+                    .padding()
+            }
+        }
+        .padding(.all, 16)
+        .frame(height: 66)
+        .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: 15))
     }
     
