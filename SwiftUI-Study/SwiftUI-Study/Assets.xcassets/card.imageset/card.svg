@@ -1,0 +1,24 @@
+<svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="26" height="21" fill="#2D2D2D"/>
+<g id="&#237;&#138;&#184;&#235;&#160;&#136;&#235;&#184;&#148;&#236;&#155;&#148;&#235;&#160;&#155; - &#235;&#169;&#148;&#236;&#157;&#184;&#237;&#153;&#148;&#235;&#169;&#180;" clip-path="url(#clip0_0_1)">
+<rect width="375" height="812" transform="translate(-41 -142)" fill="#F4F6F8"/>
+<rect id="Rectangle 1" x="-25" y="-26" width="343" height="76" rx="15" fill="url(#paint0_linear_0_1)"/>
+<circle id="Ellipse 4" cx="13" cy="12" r="22" fill="#51CFB7"/>
+<g id="Group 5">
+<rect id="Rectangle 11" y="6.2207" width="22" height="14" rx="2" transform="rotate(-16.4249 0 6.2207)" fill="#539988"/>
+<g id="Group 4">
+<rect id="Rectangle 9" x="4" y="7" width="22" height="14" rx="2" fill="white"/>
+<rect id="Rectangle 10" x="19" y="12" width="4" height="3" rx="0.5" fill="#FFDD96"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="-25" y1="12" x2="318" y2="12" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6FE8B7"/>
+<stop offset="1" stop-color="#35DAE3"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="375" height="812" fill="white" transform="translate(-41 -142)"/>
+</clipPath>
+</defs>
+</svg>
