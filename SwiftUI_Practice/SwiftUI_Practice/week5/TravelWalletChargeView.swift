@@ -12,6 +12,9 @@ struct TravelWalletChargeView: View {
     @State private var inputUSD = ""
     @Binding var isPresented: Bool
 
+    
+    private let exchangeRate = 1400
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 63) {
             VStack(alignment: .leading, spacing: 18) {
@@ -36,9 +39,9 @@ struct TravelWalletChargeView: View {
                     Text("대한민국 KRW")
                         .font(.custom("SUIT-Bold", size: 15))
                 }
-                Text("0원")
+                Text("\(calculateKRW())원")
                     .font(.custom("SUIT-Bold", size: 18))
-                Text("1달러 = 1,400원")
+                Text("1달러 = \(formatNumber(Double(exchangeRate)))원")
                     .font(.custom("SUIT-Medium", size: 10))
                     .foregroundColor(.gray)
             }
@@ -54,8 +57,21 @@ struct TravelWalletChargeView: View {
                 .padding(.top, 18)
                 .background(.twBlue)
         }
+        
     }
     
+    private func calculateKRW() -> String {
+        guard let usd = Double(inputUSD) else { return "0" }
+        let krw = usd * Double(exchangeRate)
+        return formatNumber(krw)
+    }
+    
+    private func formatNumber(_ number: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 0
+        return formatter.string(from: NSNumber(value: number)) ?? "0"
+    }
 }
 
 
