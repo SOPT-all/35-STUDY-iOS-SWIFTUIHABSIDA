@@ -17,6 +17,7 @@ enum Tab: String {
 
 struct TabbarView: View {
     
+    @State var path: [String] = []
     @State var selectedTab: Tab = .pay
     
     var body: some View {
@@ -24,7 +25,7 @@ struct TabbarView: View {
         ZStack {
             switch selectedTab {
             case .pay:
-                PayView()
+                PayView(path: $path)
             case .transfer:
                 Text("송금 탭")
                     .font(.SUITFont(weight: .bold, size: 30))
@@ -38,9 +39,12 @@ struct TabbarView: View {
                 Text("마이 탭")
                     .font(.SUITFont(weight: .bold, size: 30))
             }
-            VStack {
-                Spacer()
-                CustomTabView(selectedTab: $selectedTab)
+            
+            if path.isEmpty {
+                VStack {
+                    Spacer()
+                    CustomTabView(selectedTab: $selectedTab)
+                }
             }
         }
         .edgesIgnoringSafeArea(.bottom)

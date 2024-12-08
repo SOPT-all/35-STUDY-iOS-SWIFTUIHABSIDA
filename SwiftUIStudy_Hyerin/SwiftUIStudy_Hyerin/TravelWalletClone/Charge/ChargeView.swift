@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ChargeView: View {
     
+    @Binding var path: [String]
+    @Binding var chargedAmount: String
     @State var inputAmount: String = ""
     
     var body: some View {
@@ -19,6 +21,8 @@ struct ChargeView: View {
             if !inputAmount.isEmpty && Int(inputAmount) != 0 {
                 Button {
                     print("충전하기 버튼 눌림")
+                    chargedAmount = totalAmount
+                    path.removeLast()
                 } label: {
                     ZStack {
                         Color(hex: "0BAEFF")
@@ -79,7 +83,7 @@ struct ChargeView: View {
                     .font(.SUITFont(weight: .bold, size: 15))
                 Spacer()
             }
-            Text("\(exchangedKRWAmount)원")
+            Text("\(krwAmount)원")
                 .font(.SUITFont(weight: .bold, size: 18))
                 .foregroundStyle(.black)
             Text("1달러 = 1,400원")
@@ -91,25 +95,29 @@ struct ChargeView: View {
     }
     
     private var inputAmountWithComma: String {
-        let AmountIntValue = Int(inputAmount)
+        let amountIntValue = Int(inputAmount)
         
         let numberFormatter: NumberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         
-        return numberFormatter.string(for: AmountIntValue)!
+        return numberFormatter.string(for: amountIntValue)!
     }
     
-    private var exchangedKRWAmount: String {
-        let KrwIntValue = (Int(inputAmount) ?? 0) * 1400
+    private var krwAmount: String {
+        let krwIntValue = (Int(inputAmount) ?? 0) * 1400
         
         let numberFormatter: NumberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         
-        return numberFormatter.string(for: KrwIntValue)!
+        return numberFormatter.string(for: krwIntValue)!
+    }
+    
+    private var totalAmount: String {
+        let totalIntValue = (Int(inputAmount) ?? 0) + (Int(chargedAmount) ?? 0)
+        
+        let numberFormatter: NumberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        return numberFormatter.string(for: totalIntValue)!
     }
 }
-
-#Preview {
-    ChargeView()
-}
-
