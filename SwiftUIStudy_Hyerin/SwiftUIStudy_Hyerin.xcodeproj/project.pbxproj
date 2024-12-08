@@ -19,6 +19,8 @@
 		D039A3CE2D05BE3F00D071CB /* HighlightTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3CD2D05BE2900D071CB /* HighlightTextModifier.swift */; };
 		D039A3D02D05C54500D071CB /* MyWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3CF2D05C53A00D071CB /* MyWalletView.swift */; };
 		D039A3D42D05CC7B00D071CB /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3D32D05CC7900D071CB /* AdView.swift */; };
+		D039A3D62D05CF9D00D071CB /* PayFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3D52D05CF2D00D071CB /* PayFeatureView.swift */; };
+		D039A3D82D05D0E100D071CB /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3D72D05D0DC00D071CB /* FeatureView.swift */; };
 		D05C32012CE0E076004761A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */; };
 		D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FD2CE0E076004761A7 /* Assets.xcassets */; };
 		D05C32032CE0E076004761A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FE2CE0E076004761A7 /* ContentView.swift */; };
@@ -39,6 +41,8 @@
 		D039A3CD2D05BE2900D071CB /* HighlightTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightTextModifier.swift; sourceTree = "<group>"; };
 		D039A3CF2D05C53A00D071CB /* MyWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletView.swift; sourceTree = "<group>"; };
 		D039A3D32D05CC7900D071CB /* AdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
+		D039A3D52D05CF2D00D071CB /* PayFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayFeatureView.swift; sourceTree = "<group>"; };
+		D039A3D72D05D0DC00D071CB /* FeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
 		D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D05C31FD2CE0E076004761A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05C31FE2CE0E076004761A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				D039A3C82D05BA1400D071CB /* PlatinumCardView.swift */,
 				D039A3CF2D05C53A00D071CB /* MyWalletView.swift */,
 				D039A3D32D05CC7900D071CB /* AdView.swift */,
+				D039A3D52D05CF2D00D071CB /* PayFeatureView.swift */,
+				D039A3D72D05D0DC00D071CB /* FeatureView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				D039A3D42D05CC7B00D071CB /* AdView.swift in Sources */,
 				D039A3BB2D057F6D00D071CB /* TabbarView.swift in Sources */,
 				D039A3B32D04F08100D071CB /* FontLiterals.swift in Sources */,
+				D039A3D82D05D0E100D071CB /* FeatureView.swift in Sources */,
 				D039A3C92D05BA2A00D071CB /* PlatinumCardView.swift in Sources */,
 				D05C32032CE0E076004761A7 /* ContentView.swift in Sources */,
 				D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */,
@@ -282,6 +289,7 @@
 				D039A3CB2D05BC1200D071CB /* View+.swift in Sources */,
 				D05C32082CE0E2E2004761A7 /* ComponentPracticeView.swift in Sources */,
 				D039A3D02D05C54500D071CB /* MyWalletView.swift in Sources */,
+				D039A3D62D05CF9D00D071CB /* PayFeatureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
