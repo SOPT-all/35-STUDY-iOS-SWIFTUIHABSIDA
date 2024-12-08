@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AdView: View {
     
+    @Binding var isAdBoxShown: Bool
+    
     var body: some View {
         ZStack {
             Color(.white)
@@ -20,6 +22,9 @@ struct AdView: View {
                 Spacer()
                 Button {
                     print("닫기 버튼 눌림")
+                    withAnimation {
+                        isAdBoxShown = false
+                    }
                 } label: {
                     Image(.iconClose)
                 }

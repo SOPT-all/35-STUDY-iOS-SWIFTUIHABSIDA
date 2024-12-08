@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PayView: View {
     
+    @State var isAdBoxShown: Bool = true
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 22) {
@@ -19,8 +21,11 @@ struct PayView: View {
                     .frame(height: 76)
                 MyWalletView()
                     .frame(height: 228)
-                AdView()
-                    .frame(height: 66)
+                if isAdBoxShown {
+                    AdView(isAdBoxShown: $isAdBoxShown)
+                        .frame(height: 66)
+                        .transition(.opacity)
+                }
                 PayFeatureView()
             }
         }
