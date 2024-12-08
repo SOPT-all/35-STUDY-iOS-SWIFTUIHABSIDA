@@ -21,31 +21,27 @@ struct TabbarView: View {
     
     var body: some View {
         
-        VStack(spacing: 0) {
+        ZStack {
             switch selectedTab {
             case .pay:
-                Text("페이 탭")
-                    .font(.SUITFont(weight: .bold, size: 30))
-                    .padding(.top, 300)
+                PayView()
             case .transfer:
                 Text("송금 탭")
                     .font(.SUITFont(weight: .bold, size: 30))
-                    .padding(.top, 300)
             case .directPerhase:
                 Text("직구 탭")
                     .font(.SUITFont(weight: .bold, size: 30))
-                    .padding(.top, 300)
             case .travel:
                 Text("여행 탭")
                     .font(.SUITFont(weight: .bold, size: 30))
-                    .padding(.top, 300)
             case .my:
                 Text("마이 탭")
                     .font(.SUITFont(weight: .bold, size: 30))
-                    .padding(.top, 300)
             }
-            Spacer()
-            CustomTabView(selectedTab: $selectedTab)
+            VStack {
+                Spacer()
+                CustomTabView(selectedTab: $selectedTab)
+            }
         }
         .edgesIgnoringSafeArea(.bottom)
     }
@@ -138,4 +134,8 @@ struct CustomTabView: View {
                 .shadow(color: .black.opacity(0.1), radius: 10)
         )
     }
+}
+
+#Preview {
+    TabbarView()
 }
