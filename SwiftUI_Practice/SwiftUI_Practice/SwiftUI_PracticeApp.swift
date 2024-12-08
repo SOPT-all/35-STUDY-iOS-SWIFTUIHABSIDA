@@ -14,7 +14,7 @@ struct SwiftUI_PracticeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationViewPractice()
+            TabViewPravtice()
         }
     }
 }
