@@ -11,7 +11,7 @@ import SwiftUI
 struct sangwookApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StateExampleView()
         }
     }
 }
