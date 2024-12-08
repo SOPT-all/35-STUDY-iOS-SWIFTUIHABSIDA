@@ -41,7 +41,3 @@ struct AdView: View {
         .padding(.leading, 16)
     }
 }
-
-#Preview {
-    AdView()
-}

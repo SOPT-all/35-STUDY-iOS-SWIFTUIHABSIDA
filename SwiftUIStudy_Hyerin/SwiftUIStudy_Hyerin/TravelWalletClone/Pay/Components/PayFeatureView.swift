@@ -19,7 +19,3 @@ struct PayFeatureView: View {
         .scrollIndicators(.hidden)
     }
 }
-
-#Preview {
-    PayFeatureView()
-}
