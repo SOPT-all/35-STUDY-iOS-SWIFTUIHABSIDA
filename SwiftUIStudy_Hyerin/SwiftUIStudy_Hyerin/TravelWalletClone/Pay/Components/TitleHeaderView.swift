@@ -29,5 +29,6 @@ struct TitleHeaderView: View {
                     .frame(width: 19, height: 20.06)
             }
         }
+        .padding(.horizontal, 16)
     }
 }

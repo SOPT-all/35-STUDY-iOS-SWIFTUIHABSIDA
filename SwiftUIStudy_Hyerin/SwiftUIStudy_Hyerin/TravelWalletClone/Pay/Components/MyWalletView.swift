@@ -33,6 +33,7 @@ struct MyWalletView: View {
             .padding(.vertical, 25)
         }
         .cornerRadius(15)
+        .padding(.horizontal, 16)
     }
     
     private var header: some View {
