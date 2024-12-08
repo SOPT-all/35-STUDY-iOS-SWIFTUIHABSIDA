@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIStudy_HyerinApp: App {
     var body: some Scene {
         WindowGroup {
-            ComponentPractice()
+            TabbarView()
         }
     }
 }
