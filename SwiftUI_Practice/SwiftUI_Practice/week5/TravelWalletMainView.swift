@@ -98,6 +98,7 @@ struct TravelWalletMainView: View {
 struct PayView: View {
     
     @State private var isAdBannerVisible = true
+    @State private var isChargeView = false
     
     var body: some View {
         NavigationView {
@@ -140,6 +141,9 @@ struct PayView: View {
                 }
             }
             .background(Color(.gray01).ignoresSafeArea())
+        }
+        .fullScreenCover(isPresented: $isChargeView) {
+            TravelWalletChargeView(isPresented: $isChargeView)
         }
     }
     

@@ -10,6 +10,7 @@ import SwiftUI
 struct TravelWalletChargeView: View {
     
     @State private var inputUSD = ""
+    @Binding var isPresented: Bool
 
     var body: some View {
         VStack(alignment: .leading, spacing: 63) {
