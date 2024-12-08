@@ -13,6 +13,7 @@
 		D039A3B32D04F08100D071CB /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3B22D04F07B00D071CB /* FontLiterals.swift */; };
 		D039A3BB2D057F6D00D071CB /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3BA2D057F6800D071CB /* TabbarView.swift */; };
 		D039A3BE2D059F3E00D071CB /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3BD2D059F3800D071CB /* Color+.swift */; };
+		D039A3C72D05B8E100D071CB /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3C62D05B8D100D071CB /* TitleHeaderView.swift */; };
 		D05C32012CE0E076004761A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */; };
 		D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FD2CE0E076004761A7 /* Assets.xcassets */; };
 		D05C32032CE0E076004761A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FE2CE0E076004761A7 /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 		D039A3B22D04F07B00D071CB /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
 		D039A3BA2D057F6800D071CB /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		D039A3BD2D059F3800D071CB /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		D039A3C62D05B8D100D071CB /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
 		D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D05C31FD2CE0E076004761A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05C31FE2CE0E076004761A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		D039A3B52D057DFE00D071CB /* TravelWalletClone */ = {
 			isa = PBXGroup;
 			children = (
+				D039A3C22D05B89300D071CB /* Pay */,
 				D039A3C12D05B82B00D071CB /* Tabbar */,
 			);
 			path = TravelWalletClone;
@@ -105,6 +108,22 @@
 				D039A3BA2D057F6800D071CB /* TabbarView.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		D039A3C22D05B89300D071CB /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3C52D05B8B600D071CB /* Components */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		D039A3C52D05B8B600D071CB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3C62D05B8D100D071CB /* TitleHeaderView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		D05C31FC2CE0E076004761A7 /* Preview Content */ = {
@@ -233,6 +252,7 @@
 				D039A3B32D04F08100D071CB /* FontLiterals.swift in Sources */,
 				D05C32032CE0E076004761A7 /* ContentView.swift in Sources */,
 				D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */,
+				D039A3C72D05B8E100D071CB /* TitleHeaderView.swift in Sources */,
 				D05C32082CE0E2E2004761A7 /* ComponentPracticeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
