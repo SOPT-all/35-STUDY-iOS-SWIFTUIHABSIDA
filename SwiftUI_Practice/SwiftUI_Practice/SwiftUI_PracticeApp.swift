@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUI_PracticeApp: App {
+    @State private var inputAmount: String = ""
+    @State private var isCharged: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            TravelWalletMainView()
+            TravelWalletMainView(inputAmount: $inputAmount, isCharged: $isCharged)
         }
     }
 }
+

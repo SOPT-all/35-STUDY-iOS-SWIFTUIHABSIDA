@@ -11,7 +11,9 @@ struct TravelWalletChargeView: View {
     
     @State private var inputUSD = ""
     @Binding var isPresented: Bool
-
+    
+    @Binding var inputAmount: String
+    @Binding var isCharged: Bool
     
     private let exchangeRate = 1400
     
@@ -49,7 +51,11 @@ struct TravelWalletChargeView: View {
             
             Spacer()
         }
-        Button(action: {}) {
+        Button(action: {
+                    inputAmount = inputUSD
+                    isCharged = true
+                    isPresented = false
+                })  {
             Text("충전하기")
                 .font(.custom("SUIT-Bold", size: 18))
                 .foregroundColor(.white)

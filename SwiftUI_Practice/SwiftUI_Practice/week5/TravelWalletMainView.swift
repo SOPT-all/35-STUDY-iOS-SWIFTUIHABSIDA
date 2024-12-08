@@ -9,20 +9,28 @@ import SwiftUI
 
 struct TravelWalletMainView: View {
     
-    init() {
+    
+    @State private var selectedTab = 0
+    
+    @Binding var inputAmount: String
+    @Binding var isCharged: Bool
+    
+    init(inputAmount: Binding<String>, isCharged: Binding<Bool>) {
+        self._inputAmount = inputAmount
+        self._isCharged = isCharged
+        
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithOpaqueBackground()
-        tabBarAppearance.backgroundColor = UIColor.white
+        tabBarAppearance.backgroundColor = UIColor.white // 배경색을 흰색으로 설정
         UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
         UITabBar.appearance().standardAppearance = tabBarAppearance
     }
     
-    @State private var selectedTab = 0
     
     var body: some View {
         NavigationView {
             TabView(selection: $selectedTab) {
-                PayView()
+                PayView(inputAmount: $inputAmount, isCharged: $isCharged)
                     .tabItem {
                         VStack {
                             Image("pay")
@@ -97,6 +105,8 @@ struct TravelWalletMainView: View {
 // 메인 화면
 struct PayView: View {
     
+    @Binding var inputAmount: String
+    @Binding var isCharged: Bool
     @State private var isAdBannerVisible = true
     @State private var isChargeView = false
     
@@ -143,7 +153,8 @@ struct PayView: View {
             .background(Color(.gray01).ignoresSafeArea())
         }
         .fullScreenCover(isPresented: $isChargeView) {
-            TravelWalletChargeView(isPresented: $isChargeView)
+            TravelWalletChargeView(isPresented: $isChargeView, inputAmount: $inputAmount, isCharged: $isCharged)
+            
         }
     }
     
@@ -200,12 +211,30 @@ struct PayView: View {
                         .resizable()
                         .frame(width: 24, height: 24)
                         .foregroundColor(.yellow)
+                        .padding(.trailing, -5)
                 }
             }
-            Text("아직 충전된 외화가 없습니다.")
-                .font(.custom("SUIT-Medium", size: 13))
-                .foregroundColor(.gray)
-                .padding(.vertical, 44)
+            if !inputAmount.isEmpty {
+                HStack {
+                    Image("USA")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                    Text("미국")
+                        .font(.custom("SUIT-Bold", size: 15))
+                        .foregroundColor(.black)
+                    Spacer()
+                    Text("$\(inputAmount)")
+                        .font(.custom("SUIT-SemiBold", size: 15))
+                        .foregroundColor(.black)
+                }
+                .padding(.bottom, 60)
+            } else {
+                Text("아직 충전된 외화가 없습니다.")
+                    .font(.custom("SUIT-Medium", size: 13))
+                    .foregroundColor(.gray)
+                    .padding(.vertical, 44)
+            }
+            
             Button(action: {
                 isChargeView = true
             }) {
@@ -295,6 +324,6 @@ struct EtcView: View {
 }
 
 
-#Preview {
-    TravelWalletMainView()
-}
+//#Preview {
+//    TravelWalletMainView()
+//}
