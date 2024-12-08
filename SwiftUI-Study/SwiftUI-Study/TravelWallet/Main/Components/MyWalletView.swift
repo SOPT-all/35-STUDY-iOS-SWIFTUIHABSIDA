@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MyWalletView: View {
+    @Binding var balance: Int
+    @State private var isChargeViewActive = false
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15)
@@ -39,16 +42,20 @@ struct MyWalletView: View {
                 }
                 .padding(.horizontal, 16)
                 
-                Spacer()
                 
-                Text("아직 충전된 외화가 없습니다.")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(Color(hex: "#616161"))
+                if balance == 0 {
+                    Spacer()
+                    Text("아직 충전된 외화가 없습니다.")
+                        .font(.system(size: 14, weight: .medium))
+                        .foregroundColor(Color(hex: "#616161"))
+                }else {
+                    BalanceView(balance: balance)
+                }
                 
                 Spacer()
                 
                 Button(action: {
-                    print("충전하기")
+                    isChargeViewActive = true
                 }) {
                     Text("충전하기")
                         .frame(maxWidth: .infinity, minHeight: 52)
@@ -58,6 +65,9 @@ struct MyWalletView: View {
                         .cornerRadius(11)
                 }
                 .padding(.horizontal, 16)
+                .fullScreenCover(isPresented: $isChargeViewActive) {
+                    ChargeView(balance: $balance)
+                }
             }
             .padding(.vertical, 16)
         }
@@ -66,6 +76,25 @@ struct MyWalletView: View {
     }
 }
 
-#Preview {
-    MyWalletView()
+struct BalanceView: View {
+    let balance: Int
+    
+    var body: some View {
+        HStack {
+            Image(.usa)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30, height: 30)
+            
+            Text("미국")
+                .font(.system(size: 15, weight: .semibold))
+            
+            Spacer()
+            
+            Text("$\(balance)")
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundColor(.black)
+        }
+        .padding(.horizontal, 25)
+    }
 }

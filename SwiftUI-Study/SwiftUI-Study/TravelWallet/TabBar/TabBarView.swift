@@ -34,8 +34,8 @@ struct TabBarView: View {
                     .onTapGesture { selectedTab = 4 }
             }
             .ignoresSafeArea()
-            .padding(.horizontal, 29)
-            .padding(.top, 9)
+            .padding(.horizontal, 10)
+            .padding(.top, 10)
             .background(Color.white)
             .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: -2)
         }
