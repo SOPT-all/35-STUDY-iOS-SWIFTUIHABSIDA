@@ -11,7 +11,7 @@ import SwiftUI
 struct SungMinChoApp: App {
     var body: some Scene {
         WindowGroup {
-            ScrollViewGridPractice()
+            HomeView()
         }
     }
 }
