@@ -79,12 +79,15 @@ struct HomeView: View {
     private var payView: some View {
         VStack(spacing: 20) {
             announceView
+                .frame(width: 343)
             myWalletView
+                .frame(width: 343)
             if !isDollorBoxHidden {
                 dollorBoxView
+                    .frame(width: 343)
             }
+            bottomScrollView
         }
-        .frame(width: 343)
     }
     
     private var announceView: some View {
@@ -196,6 +199,60 @@ struct HomeView: View {
         .frame(height: 66)
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: 15))
+    }
+    
+    private var bottomScrollView: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 7) {
+                VStack(alignment: .leading) {
+                    Image(.npay)
+                    Spacer()
+                    Text("결제부터")
+                        .font(.system(size: 15))
+                        .foregroundStyle(.grayFont)
+                        .padding(.bottom, 6)
+                    Text("N빵하기")
+                        .font(.system(size: 15, weight: .semibold))
+                }
+                .padding()
+                .frame(width: 131, height: 131)
+                .background(Color.white)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+                
+                VStack(alignment: .leading) {
+                    Image(.sendToFriend)
+                    Spacer()
+                    Text("친구에게")
+                        .font(.system(size: 15))
+                        .foregroundStyle(.grayFont)
+                        .padding(.bottom, 6)
+                    Text("송금하기")
+                        .font(.system(size: 15, weight: .semibold))
+                }
+                .padding()
+                .frame(width: 131, height: 131)
+                .background(Color.white)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+                
+                VStack(alignment: .leading) {
+                    Image(.exchange)
+                    Spacer()
+                    Text("외화간")
+                        .font(.system(size: 15))
+                        .foregroundStyle(.grayFont)
+                        .padding(.bottom, 6)
+                    Text("환전하기")
+                        .font(.system(size: 15, weight: .semibold))
+                }
+                .padding()
+                .frame(width: 131, height: 131)
+                .background(Color.white)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+            }
+        }
+        .contentMargins(.leading, 32)
+        .frame(height: 131)
+        .ignoresSafeArea()
     }
     
     private var sendView: some View {
