@@ -34,6 +34,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D039A3A72D04EE3900D071CB /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3B12D04F06900D071CB /* Literals */,
+				D039A3B02D04F01900D071CB /* Resources */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		D039A3A82D04EE5800D071CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D039A3B02D04F01900D071CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D05C31FD2CE0E076004761A7 /* Assets.xcassets */,
+				D039A3A82D04EE5800D071CB /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D039A3B12D04F06900D071CB /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
 		D05C31FC2CE0E076004761A7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -46,10 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				D05C31FC2CE0E076004761A7 /* Preview Content */,
-				D05C31FD2CE0E076004761A7 /* Assets.xcassets */,
-				D05C31FE2CE0E076004761A7 /* ContentView.swift */,
-				D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */,
+				D039A3A72D04EE3900D071CB /* Global */,
 				D05C32062CE0E092004761A7 /* Week2 */,
+				D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */,
 			);
 			path = SwiftUIStudy_Hyerin;
 			sourceTree = "<group>";
@@ -57,6 +88,7 @@
 		D05C32062CE0E092004761A7 /* Week2 */ = {
 			isa = PBXGroup;
 			children = (
+				D05C31FE2CE0E076004761A7 /* ContentView.swift */,
 				D05C32072CE0E2DC004761A7 /* ComponentPracticeView.swift */,
 			);
 			path = Week2;
