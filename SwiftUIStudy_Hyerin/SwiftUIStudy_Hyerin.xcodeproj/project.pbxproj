@@ -11,6 +11,7 @@
 		D039A3AD2D04EE6E00D071CB /* SUIT-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D039A3AA2D04EE6E00D071CB /* SUIT-Medium.otf */; };
 		D039A3AE2D04EE6E00D071CB /* SUIT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D039A3A92D04EE6E00D071CB /* SUIT-Bold.otf */; };
 		D039A3B32D04F08100D071CB /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3B22D04F07B00D071CB /* FontLiterals.swift */; };
+		D039A3BE2D059F3E00D071CB /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3BD2D059F3800D071CB /* Color+.swift */; };
 		D05C32012CE0E076004761A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */; };
 		D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FD2CE0E076004761A7 /* Assets.xcassets */; };
 		D05C32032CE0E076004761A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FE2CE0E076004761A7 /* ContentView.swift */; };
@@ -23,6 +24,7 @@
 		D039A3AA2D04EE6E00D071CB /* SUIT-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Medium.otf"; sourceTree = "<group>"; };
 		D039A3AB2D04EE6E00D071CB /* SUIT-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-SemiBold.otf"; sourceTree = "<group>"; };
 		D039A3B22D04F07B00D071CB /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+		D039A3BD2D059F3800D071CB /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D05C31FD2CE0E076004761A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05C31FE2CE0E076004761A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		D039A3A72D04EE3900D071CB /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				D039A3BC2D059F3100D071CB /* Extensions */,
 				D039A3B12D04F06900D071CB /* Literals */,
 				D039A3B02D04F01900D071CB /* Resources */,
 			);
@@ -76,6 +79,14 @@
 				D039A3B22D04F07B00D071CB /* FontLiterals.swift */,
 			);
 			path = Literals;
+			sourceTree = "<group>";
+		};
+		D039A3BC2D059F3100D071CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3BD2D059F3800D071CB /* Color+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D05C31FC2CE0E076004761A7 /* Preview Content */ = {
@@ -198,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D039A3BE2D059F3E00D071CB /* Color+.swift in Sources */,
 				D039A3B32D04F08100D071CB /* FontLiterals.swift in Sources */,
 				D05C32032CE0E076004761A7 /* ContentView.swift in Sources */,
 				D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */,
