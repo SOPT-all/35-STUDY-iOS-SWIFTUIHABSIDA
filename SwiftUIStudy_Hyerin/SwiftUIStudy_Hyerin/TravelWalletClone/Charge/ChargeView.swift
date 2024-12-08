@@ -16,7 +16,7 @@ struct ChargeView: View {
             usdView
             krwView
             Spacer()
-            if !inputAmount.isEmpty {
+            if !inputAmount.isEmpty && Int(inputAmount) != 0 {
                 Button {
                     print("충전하기 버튼 눌림")
                 } label: {
@@ -29,7 +29,7 @@ struct ChargeView: View {
                     .frame(height: 60)
                 }
             }
-            CustomNumberPad()
+            CustomNumberPad(inputAmount: $inputAmount)
         }
     }
     
@@ -44,13 +44,20 @@ struct ChargeView: View {
                 
             }
             HStack(spacing: 0) {
-                Text("충전할 금액을 입력해주세요.")
-                    .font(.SUITFont(weight: .bold, size: 18))
-                    .foregroundStyle(Color(hex: "BDBDBD"))
+                if inputAmount.isEmpty || Int(inputAmount) == 0 {
+                    Text("충전할 금액을 입력해주세요.")
+                        .font(.SUITFont(weight: .bold, size: 18))
+                        .foregroundStyle(Color(hex: "BDBDBD"))
+                } else {
+                    Text("\(inputAmountWithComma)달러")
+                        .font(.SUITFont(weight: .bold, size: 18))
+                        .foregroundStyle(.black)
+                }
                 Spacer()
-                if !inputAmount.isEmpty {
+                if !inputAmount.isEmpty && Int(inputAmount) != 0 {
                     Button {
                         print("지움 버튼 눌림")
+                        inputAmount = ""
                     } label: {
                         Image(.iconRemove)
                     }
@@ -72,7 +79,7 @@ struct ChargeView: View {
                     .font(.SUITFont(weight: .bold, size: 15))
                 Spacer()
             }
-            Text("0원")
+            Text("\(exchangedKRWAmount)원")
                 .font(.SUITFont(weight: .bold, size: 18))
                 .foregroundStyle(.black)
             Text("1달러 = 1,400원")
@@ -81,6 +88,24 @@ struct ChargeView: View {
         }
         .padding(.top, 63)
         .padding(.leading, 17)
+    }
+    
+    private var inputAmountWithComma: String {
+        let AmountIntValue = Int(inputAmount)
+        
+        let numberFormatter: NumberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        return numberFormatter.string(for: AmountIntValue)!
+    }
+    
+    private var exchangedKRWAmount: String {
+        let KrwIntValue = (Int(inputAmount) ?? 0) * 1400
+        
+        let numberFormatter: NumberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        return numberFormatter.string(for: KrwIntValue)!
     }
 }
 
