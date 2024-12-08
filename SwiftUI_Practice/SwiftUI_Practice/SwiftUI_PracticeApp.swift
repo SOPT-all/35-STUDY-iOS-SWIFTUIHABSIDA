@@ -14,7 +14,7 @@ struct SwiftUI_PracticeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TravelWalletMainView(inputAmount: $inputAmount, isCharged: $isCharged)
+            NavigationViewPractice()
         }
     }
 }
