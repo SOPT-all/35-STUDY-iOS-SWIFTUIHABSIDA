@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MyWalletView: View {
-    @Binding var balance: Int
+    @ObservedObject var balanceModel: BalanceModel
     @State private var isChargeViewActive = false
     
     var body: some View {
@@ -43,17 +43,17 @@ struct MyWalletView: View {
                 .padding(.horizontal, 16)
                 
                 
-                if balance == 0 {
+                if balanceModel.balance == 0 {
                     Spacer()
                     Text("아직 충전된 외화가 없습니다.")
                         .font(.system(size: 14, weight: .medium))
                         .foregroundColor(Color(hex: "#616161"))
                 }else {
-                    BalanceView(balance: balance)
+                    BalanceView(balance: balanceModel.balance)
                 }
                 
                 Spacer()
-                
+        
                 Button(action: {
                     isChargeViewActive = true
                 }) {
@@ -66,7 +66,7 @@ struct MyWalletView: View {
                 }
                 .padding(.horizontal, 16)
                 .fullScreenCover(isPresented: $isChargeViewActive) {
-                    ChargeView(balance: $balance)
+                    ChargeView(balanceModel: balanceModel)
                 }
             }
             .padding(.vertical, 16)

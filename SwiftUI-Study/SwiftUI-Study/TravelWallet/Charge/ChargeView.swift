@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChargeView: View {
-    @Binding var balance: Int
+    @ObservedObject var balanceModel: BalanceModel
     @State private var userInputAmount = ""
     private let exchangeRate = 1400
     @Environment(\.dismiss) var dismiss
@@ -44,7 +44,7 @@ struct ChargeView: View {
         
         Button(action: {
             if let amount = Int(userInputAmount) {
-                balance += amount
+                balanceModel.balance += amount
             }
             dismiss()
         }) {
@@ -55,9 +55,4 @@ struct ChargeView: View {
                 .background(Color(hex: "#0BAEFF"))
         }
     }
-}
-
-#Preview {
-    @Previewable @State var previewBalance = 100
-    ChargeView(balance: $previewBalance)
 }

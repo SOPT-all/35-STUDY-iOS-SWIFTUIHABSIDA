@@ -9,10 +9,10 @@ import SwiftUI
 
 struct MainHomeView: View {
     @State private var isAdvertisingBannerHidden = false
-    @State private var balance: Int = 0
-    
+    @StateObject private var balance = BalanceModel()
+
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ZStack {
                 Color(hex: "#F4F6F8")
                     .edgesIgnoringSafeArea(.all)
@@ -21,11 +21,12 @@ struct MainHomeView: View {
                     VStack(spacing: 22) {
                         HeaderView()
                         CardView()
-                        MyWalletView(balance: $balance)
+                        MyWalletView(balanceModel: balance)
                         AdvertisingBannerView(isHidden: $isAdvertisingBannerHidden)
                         MenuScrollView()
                     }
                 }
+                .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
