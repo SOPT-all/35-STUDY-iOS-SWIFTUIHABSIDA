@@ -27,6 +27,7 @@ struct AdView: View {
             .padding(.horizontal, 21)
         }
         .cornerRadius(15)
+        .padding(.horizontal, 16)
     }
     
     private var verticalStackText: some View {

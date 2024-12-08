@@ -23,7 +23,6 @@ struct PayView: View {
                     .frame(height: 66)
                 PayFeatureView()
             }
-            .padding(.horizontal, 16)
         }
         .background(Color(hex: "F4F6F8"))
     }

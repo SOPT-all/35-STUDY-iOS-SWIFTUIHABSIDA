@@ -25,6 +25,7 @@ struct PlatinumCardView: View {
             
         }
         .cornerRadius(15)
+        .padding(.horizontal, 16)
     }
     
     private var verticalStackText: some View {
