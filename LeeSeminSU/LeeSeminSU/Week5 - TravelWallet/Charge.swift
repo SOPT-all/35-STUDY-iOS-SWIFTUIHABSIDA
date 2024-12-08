@@ -11,6 +11,10 @@ struct Charge: View {
     @State private var usdMoney: String = ""
     @State private var krwMoney: String = "0원"
     
+    @Binding var chargedMoney: Int
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -27,7 +31,7 @@ struct Charge: View {
                 .padding(.leading)
                 .padding(.bottom, 40)
                 .onChange(of: usdMoney) { newValue in
-                    if let usd = Double(newValue) {
+                    if let usd = Int(newValue) {
                         let krw = usd * 1400
                         krwMoney = "\(Int(krw))원"
                     } else {
@@ -56,7 +60,11 @@ struct Charge: View {
             Spacer()
             
             Button(action: {
+                if let usd = Int(usdMoney) {
+                    chargedMoney += usd
+                }
                 
+                presentationMode.wrappedValue.dismiss()
             }) {
                 Text("충전하기")
                     .font(.system(size: 18, weight: .bold))
@@ -65,12 +73,7 @@ struct Charge: View {
                     .frame(height: 81)
                     .background(Color(hex: "#0BAEFF"))
             }
-            
         }
         .navigationBarHidden(true)
     }
-}
-
-#Preview {
-    Charge()
 }

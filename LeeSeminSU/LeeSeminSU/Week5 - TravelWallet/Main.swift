@@ -10,6 +10,8 @@ import SwiftUI
 struct Main: View {
     @State private var isDollarBoxVisible = true
     
+    @State private var chargedMoney: Int = 0
+    
     var body: some View {
         TabView {
             NavigationView {
@@ -95,11 +97,26 @@ struct Main: View {
                             }
                             .padding(.horizontal, 5)
                             
-                            Text("아직 충전된 외화가 없습니다.")
-                                .font(.system(size: 13))
-                                .foregroundColor(Color(hex: "#616161"))
+                            if chargedMoney == 0 {
+                                Text("아직 충전된 외화가 없습니다.")
+                                    .font(.system(size: 13))
+                                    .foregroundColor(Color(hex: "#616161"))
+                            }
+                            else {
+                                HStack {
+                                    Image("USA")
+                                    Text("미국")
+                                        .font(.system(size: 15, weight: .semibold))
+                                    
+                                    Spacer()
+                                    
+                                    Text("$\(chargedMoney)")
+                                        .font(.system(size: 15, weight: .medium))
+                                }
+                                .padding(.horizontal, 5)
+                            }
                             
-                            NavigationLink(destination: Charge()) {
+                            NavigationLink(destination: Charge(chargedMoney: $chargedMoney)) {
                                 Text("충전하기")
                                     .font(.system(size: 15, weight: .bold))
                                     .foregroundColor(.white)
@@ -160,7 +177,6 @@ struct Main: View {
                     Spacer()
                 }
                 .background(Color(hex: "#F4F4F4"))
-                .navigationBarHidden(true)
             }
             .navigationBarHidden(true)
             
