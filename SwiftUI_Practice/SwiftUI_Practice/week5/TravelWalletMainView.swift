@@ -20,74 +20,77 @@ struct TravelWalletMainView: View {
     @State private var selectedTab = 0
     
     var body: some View {
-        TabView(selection: $selectedTab) {
-            PayView()
-                .tabItem {
-                    VStack {
-                        Image("pay")
-                            .renderingMode(.template)
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                            .foregroundColor(selectedTab == 0 ? .twBlue : .gray)
-                        Text("페이")
+        NavigationView {
+            TabView(selection: $selectedTab) {
+                PayView()
+                    .tabItem {
+                        VStack {
+                            Image("pay")
+                                .renderingMode(.template)
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(selectedTab == 0 ? .twBlue : .gray)
+                            Text("페이")
+                        }
                     }
-                }
-                .tag(0)
-            
-            EtcView(title: "송금")
-                .tabItem {
-                    VStack {
-                        Image("dollar")
-                            .renderingMode(.template)
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                            .foregroundColor(selectedTab == 1 ? .twBlue : .gray)
-                        Text("송금")
+                    .tag(0)
+                
+                EtcView(title: "송금")
+                    .tabItem {
+                        VStack {
+                            Image("dollar")
+                                .renderingMode(.template)
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(selectedTab == 1 ? .twBlue : .gray)
+                            Text("송금")
+                        }
                     }
-                }
-                .tag(1)
-            
-            EtcView(title: "직구")
-                .tabItem {
-                    VStack {
-                        Image("shop")
-                            .renderingMode(.template)
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                            .foregroundColor(selectedTab == 2 ? .twBlue : .gray)
-                        Text("직구")
+                    .tag(1)
+                
+                EtcView(title: "직구")
+                    .tabItem {
+                        VStack {
+                            Image("shop")
+                                .renderingMode(.template)
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(selectedTab == 2 ? .twBlue : .gray)
+                            Text("직구")
+                        }
                     }
-                }
-                .tag(2)
-            
-            EtcView(title: "여행")
-                .tabItem {
-                    VStack {
-                        Image("travel")
-                            .renderingMode(.template)
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                            .foregroundColor(selectedTab == 3 ? .twBlue : .gray) // 선택된 탭일 때 색상
-                        Text("여행")
+                    .tag(2)
+                
+                EtcView(title: "여행")
+                    .tabItem {
+                        VStack {
+                            Image("travel")
+                                .renderingMode(.template)
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(selectedTab == 3 ? .twBlue : .gray) // 선택된 탭일 때 색상
+                            Text("여행")
+                        }
                     }
-                }
-                .tag(3)
-            
-            EtcView(title: "마이")
-                .tabItem {
-                    VStack {
-                        Image("my")
-                            .renderingMode(.template)
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                            .foregroundColor(selectedTab == 4 ? .twBlue : .gray)
-                        Text("마이")
+                    .tag(3)
+                
+                EtcView(title: "마이")
+                    .tabItem {
+                        VStack {
+                            Image("my")
+                                .renderingMode(.template)
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(selectedTab == 4 ? .twBlue : .gray)
+                            Text("마이")
+                        }
                     }
-                }
-                .tag(4)
+                    .tag(4)
+            }
+            .accentColor(.twBlue)
         }
-        .accentColor(.twBlue)
     }
+    
 }
 
 
@@ -168,7 +171,6 @@ struct PayView: View {
                 Image("right_arrow_icon")
                     .resizable()
                     .frame(width: 24, height: 24)
-                    .foregroundColor(.yellow)
             }
             .padding(16)
         }
@@ -200,9 +202,11 @@ struct PayView: View {
                 .font(.custom("SUIT-Medium", size: 13))
                 .foregroundColor(.gray)
                 .padding(.vertical, 44)
-            Button(action: {}) {
+            Button(action: {
+                isChargeView = true
+            }) {
                 Text("충전하기")
-                    .font(.headline)
+                    .font(.custom("SUIT-Bold", size: 18))
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .padding()
