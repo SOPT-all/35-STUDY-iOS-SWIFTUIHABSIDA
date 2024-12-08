@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainHomeView: View {
+    @State private var isAdvertisingBannerHidden = false
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -19,7 +21,7 @@ struct MainHomeView: View {
                         HeaderView()
                         CardView()
                         MyWalletView()
-                        AdvertisingBannerView()
+                        AdvertisingBannerView(isHidden: $isAdvertisingBannerHidden)
                         MenuScrollView()
                     }
                 }
