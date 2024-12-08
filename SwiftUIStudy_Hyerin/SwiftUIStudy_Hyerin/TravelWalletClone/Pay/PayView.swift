@@ -28,7 +28,3 @@ struct PayView: View {
         .background(Color(hex: "F4F6F8"))
     }
 }
-
-#Preview {
-    PayView()
-}

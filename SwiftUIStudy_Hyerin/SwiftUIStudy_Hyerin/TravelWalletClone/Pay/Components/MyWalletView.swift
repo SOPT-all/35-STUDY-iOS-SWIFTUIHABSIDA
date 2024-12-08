@@ -69,7 +69,3 @@ struct MyWalletView: View {
         }
     }
 }
-
-#Preview {
-    MyWalletView()
-}

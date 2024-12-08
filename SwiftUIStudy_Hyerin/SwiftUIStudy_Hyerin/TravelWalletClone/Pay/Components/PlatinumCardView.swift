@@ -40,7 +40,3 @@ struct PlatinumCardView: View {
         .padding(.leading, 11)
     }
 }
-
-#Preview {
-    PlatinumCardView()
-}
