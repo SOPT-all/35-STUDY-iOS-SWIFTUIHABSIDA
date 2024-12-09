@@ -20,7 +20,6 @@ struct ChargeView: View {
             Spacer()
             if !inputAmount.isEmpty && Int(inputAmount) != 0 {
                 Button {
-                    print("충전하기 버튼 눌림")
                     totalAmountManager.totalAmount += Int(inputAmount) ?? 0
                     path.removeLast()
                 } label: {
@@ -61,7 +60,6 @@ struct ChargeView: View {
                 Spacer()
                 if !inputAmount.isEmpty && Int(inputAmount) != 0 {
                     Button {
-                        print("지움 버튼 눌림")
                         inputAmount = ""
                     } label: {
                         Image(.iconRemove)

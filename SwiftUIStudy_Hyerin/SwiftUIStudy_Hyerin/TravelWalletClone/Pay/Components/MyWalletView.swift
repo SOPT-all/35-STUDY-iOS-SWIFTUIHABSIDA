@@ -24,7 +24,6 @@ struct MyWalletView: View {
                     ChargedView
                 }
                 Button {
-                    print("충전하기 버튼 눌림")
                     path.append("ChargeView")
                 } label: {
                     ZStack {

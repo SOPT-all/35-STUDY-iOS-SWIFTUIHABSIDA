@@ -141,7 +141,3 @@ struct CustomTabView: View {
         )
     }
 }
-
-#Preview {
-    TabbarView()
-}

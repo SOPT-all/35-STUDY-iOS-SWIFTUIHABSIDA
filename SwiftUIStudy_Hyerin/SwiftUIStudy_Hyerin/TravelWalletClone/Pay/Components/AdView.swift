@@ -21,7 +21,6 @@ struct AdView: View {
                 verticalStackText
                 Spacer()
                 Button {
-                    print("닫기 버튼 눌림")
                     withAnimation {
                         isAdBoxShown = false
                     }
