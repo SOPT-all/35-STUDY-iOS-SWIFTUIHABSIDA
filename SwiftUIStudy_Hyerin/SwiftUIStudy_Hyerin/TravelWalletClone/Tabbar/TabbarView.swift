@@ -17,6 +17,7 @@ enum Tab: String {
 
 struct TabbarView: View {
     
+    @StateObject private var totalAmountManager = TotalAmountManager()
     @State var path: [String] = []
     @State var selectedTab: Tab = .pay
     
@@ -26,6 +27,7 @@ struct TabbarView: View {
             switch selectedTab {
             case .pay:
                 PayView(path: $path)
+                    .environmentObject(totalAmountManager)
             case .transfer:
                 Text("송금 탭")
                     .font(.SUITFont(weight: .bold, size: 30))

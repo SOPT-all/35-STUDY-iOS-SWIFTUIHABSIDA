@@ -10,7 +10,7 @@ import SwiftUI
 struct MyWalletView: View {
     
     @Binding var path: [String]
-    @Binding var chargedAmount: String
+    @EnvironmentObject var totalAmountManager: TotalAmountManager
     
     var body: some View {
         ZStack {
@@ -18,7 +18,7 @@ struct MyWalletView: View {
             VStack {
                 header
                     .padding(.horizontal, 16)
-                if chargedAmount.isEmpty {
+                if totalAmountManager.totalAmount == 0 {
                     emptyView
                 } else {
                     ChargedView
@@ -82,7 +82,7 @@ struct MyWalletView: View {
                     .foregroundStyle(.black)
                     .padding(.leading, 10)
                 Spacer()
-                Text("$\(chargedAmount)")
+                Text("$\(totalAmountWithComma)")
                     .font(.SUITFont(weight: .semiBold, size: 15))
                     .foregroundStyle(.black)
             }
@@ -90,5 +90,12 @@ struct MyWalletView: View {
         }
         .padding(.horizontal, 20)
         .padding(.top, 20)
+    }
+    
+    private var totalAmountWithComma: String {
+        let numberFormatter: NumberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        return numberFormatter.string(for: totalAmountManager.totalAmount)!
     }
 }

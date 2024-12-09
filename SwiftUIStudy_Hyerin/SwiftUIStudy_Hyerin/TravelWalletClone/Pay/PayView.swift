@@ -11,7 +11,7 @@ struct PayView: View {
     
     @Binding var path: [String]
     @State var isAdBoxShown: Bool = true
-    @State var chargedAmount: String = ""
+    @EnvironmentObject var totalAmountManager: TotalAmountManager
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -22,7 +22,8 @@ struct PayView: View {
                         .padding(.bottom, 13)
                     PlatinumCardView()
                         .frame(height: 76)
-                    MyWalletView(path: $path, chargedAmount: $chargedAmount)
+                    MyWalletView(path: $path)
+                        .environmentObject(totalAmountManager)
                         .frame(height: 228)
                     if isAdBoxShown {
                         AdView(isAdBoxShown: $isAdBoxShown)
@@ -35,7 +36,8 @@ struct PayView: View {
             .background(Color(hex: "F4F6F8"))
             .navigationDestination(for: String.self) { view in
                 if view == "ChargeView" {
-                    ChargeView(path: $path, chargedAmount: $chargedAmount)
+                    ChargeView(path: $path)
+                        .environmentObject(totalAmountManager)
                 }
             }
         }

@@ -29,6 +29,7 @@
 		D05C32032CE0E076004761A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FE2CE0E076004761A7 /* ContentView.swift */; };
 		D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */; };
 		D05C32082CE0E2E2004761A7 /* ComponentPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C32072CE0E2DC004761A7 /* ComponentPracticeView.swift */; };
+		D0D799EF2D06B1A10069BCC0 /* TotalAmountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D799EE2D06B1950069BCC0 /* TotalAmountManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStudy_HyerinApp.swift; sourceTree = "<group>"; };
 		D05C32072CE0E2DC004761A7 /* ComponentPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPracticeView.swift; sourceTree = "<group>"; };
 		D09CC1DA2CD6330300EF4917 /* SwiftUIStudy_Hyerin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStudy_Hyerin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D799EE2D06B1950069BCC0 /* TotalAmountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalAmountManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		D039A3E02D05FC3D00D071CB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D0D799EE2D06B1950069BCC0 /* TotalAmountManager.swift */,
 				D039A3E22D05FC5300D071CB /* CustomNumberPad.swift */,
 			);
 			path = Components;
@@ -317,6 +320,7 @@
 				D05C32082CE0E2E2004761A7 /* ComponentPracticeView.swift in Sources */,
 				D039A3D02D05C54500D071CB /* MyWalletView.swift in Sources */,
 				D039A3DF2D05E96600D071CB /* ChargeView.swift in Sources */,
+				D0D799EF2D06B1A10069BCC0 /* TotalAmountManager.swift in Sources */,
 				D039A3D62D05CF9D00D071CB /* PayFeatureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

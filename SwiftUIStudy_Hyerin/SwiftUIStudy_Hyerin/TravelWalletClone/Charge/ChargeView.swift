@@ -10,8 +10,8 @@ import SwiftUI
 struct ChargeView: View {
     
     @Binding var path: [String]
-    @Binding var chargedAmount: String
     @State var inputAmount: String = ""
+    @EnvironmentObject var totalAmountManager: TotalAmountManager
     
     var body: some View {
         VStack {
@@ -21,7 +21,7 @@ struct ChargeView: View {
             if !inputAmount.isEmpty && Int(inputAmount) != 0 {
                 Button {
                     print("충전하기 버튼 눌림")
-                    chargedAmount = totalAmount
+                    totalAmountManager.totalAmount += Int(inputAmount) ?? 0
                     path.removeLast()
                 } label: {
                     ZStack {
@@ -35,6 +35,7 @@ struct ChargeView: View {
             }
             CustomNumberPad(inputAmount: $inputAmount)
         }
+        .toolbar(.hidden, for: .navigationBar)
     }
     
     private var usdView: some View {
@@ -67,12 +68,12 @@ struct ChargeView: View {
                     }
                 }
             }
-                
+            
         }
         .padding(.top, 53)
         .padding(.horizontal, 17)
     }
-
+    
     private var krwView: some View {
         VStack(alignment: .leading, spacing: 19) {
             HStack(spacing: 10) {
@@ -110,14 +111,5 @@ struct ChargeView: View {
         numberFormatter.numberStyle = .decimal
         
         return numberFormatter.string(for: krwIntValue)!
-    }
-    
-    private var totalAmount: String {
-        let totalIntValue = (Int(inputAmount) ?? 0) + (Int(chargedAmount) ?? 0)
-        
-        let numberFormatter: NumberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .decimal
-        
-        return numberFormatter.string(for: totalIntValue)!
     }
 }
