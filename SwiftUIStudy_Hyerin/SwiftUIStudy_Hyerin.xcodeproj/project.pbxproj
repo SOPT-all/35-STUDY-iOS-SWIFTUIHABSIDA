@@ -7,20 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D039A3AC2D04EE6E00D071CB /* SUIT-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D039A3AB2D04EE6E00D071CB /* SUIT-SemiBold.otf */; };
+		D039A3AD2D04EE6E00D071CB /* SUIT-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D039A3AA2D04EE6E00D071CB /* SUIT-Medium.otf */; };
+		D039A3AE2D04EE6E00D071CB /* SUIT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D039A3A92D04EE6E00D071CB /* SUIT-Bold.otf */; };
+		D039A3B32D04F08100D071CB /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3B22D04F07B00D071CB /* FontLiterals.swift */; };
+		D039A3BB2D057F6D00D071CB /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3BA2D057F6800D071CB /* TabbarView.swift */; };
+		D039A3BE2D059F3E00D071CB /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3BD2D059F3800D071CB /* Color+.swift */; };
+		D039A3C42D05B89D00D071CB /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3C32D05B89A00D071CB /* PayView.swift */; };
+		D039A3C72D05B8E100D071CB /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3C62D05B8D100D071CB /* TitleHeaderView.swift */; };
+		D039A3C92D05BA2A00D071CB /* PlatinumCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3C82D05BA1400D071CB /* PlatinumCardView.swift */; };
+		D039A3CB2D05BC1200D071CB /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3CA2D05BC0F00D071CB /* View+.swift */; };
+		D039A3CE2D05BE3F00D071CB /* HighlightTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3CD2D05BE2900D071CB /* HighlightTextModifier.swift */; };
+		D039A3D02D05C54500D071CB /* MyWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3CF2D05C53A00D071CB /* MyWalletView.swift */; };
+		D039A3D42D05CC7B00D071CB /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3D32D05CC7900D071CB /* AdView.swift */; };
+		D039A3D62D05CF9D00D071CB /* PayFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3D52D05CF2D00D071CB /* PayFeatureView.swift */; };
+		D039A3D82D05D0E100D071CB /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3D72D05D0DC00D071CB /* FeatureView.swift */; };
+		D039A3DF2D05E96600D071CB /* ChargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3DE2D05E96200D071CB /* ChargeView.swift */; };
+		D039A3E32D05FC5D00D071CB /* CustomNumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039A3E22D05FC5300D071CB /* CustomNumberPad.swift */; };
 		D05C32012CE0E076004761A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */; };
 		D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C31FD2CE0E076004761A7 /* Assets.xcassets */; };
 		D05C32032CE0E076004761A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FE2CE0E076004761A7 /* ContentView.swift */; };
 		D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */; };
 		D05C32082CE0E2E2004761A7 /* ComponentPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C32072CE0E2DC004761A7 /* ComponentPracticeView.swift */; };
+		D0D799EF2D06B1A10069BCC0 /* TotalAmountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D799EE2D06B1950069BCC0 /* TotalAmountManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D039A3A92D04EE6E00D071CB /* SUIT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Bold.otf"; sourceTree = "<group>"; };
+		D039A3AA2D04EE6E00D071CB /* SUIT-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Medium.otf"; sourceTree = "<group>"; };
+		D039A3AB2D04EE6E00D071CB /* SUIT-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-SemiBold.otf"; sourceTree = "<group>"; };
+		D039A3B22D04F07B00D071CB /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+		D039A3BA2D057F6800D071CB /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		D039A3BD2D059F3800D071CB /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		D039A3C32D05B89A00D071CB /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
+		D039A3C62D05B8D100D071CB /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
+		D039A3C82D05BA1400D071CB /* PlatinumCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatinumCardView.swift; sourceTree = "<group>"; };
+		D039A3CA2D05BC0F00D071CB /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		D039A3CD2D05BE2900D071CB /* HighlightTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightTextModifier.swift; sourceTree = "<group>"; };
+		D039A3CF2D05C53A00D071CB /* MyWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletView.swift; sourceTree = "<group>"; };
+		D039A3D32D05CC7900D071CB /* AdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
+		D039A3D52D05CF2D00D071CB /* PayFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayFeatureView.swift; sourceTree = "<group>"; };
+		D039A3D72D05D0DC00D071CB /* FeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
+		D039A3DE2D05E96200D071CB /* ChargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeView.swift; sourceTree = "<group>"; };
+		D039A3E22D05FC5300D071CB /* CustomNumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNumberPad.swift; sourceTree = "<group>"; };
 		D05C31FB2CE0E076004761A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D05C31FD2CE0E076004761A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05C31FE2CE0E076004761A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStudy_HyerinApp.swift; sourceTree = "<group>"; };
 		D05C32072CE0E2DC004761A7 /* ComponentPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPracticeView.swift; sourceTree = "<group>"; };
 		D09CC1DA2CD6330300EF4917 /* SwiftUIStudy_Hyerin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStudy_Hyerin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D799EE2D06B1950069BCC0 /* TotalAmountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalAmountManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +70,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D039A3A72D04EE3900D071CB /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3CC2D05BE1A00D071CB /* Modifier */,
+				D039A3BC2D059F3100D071CB /* Extensions */,
+				D039A3B12D04F06900D071CB /* Literals */,
+				D039A3B02D04F01900D071CB /* Resources */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		D039A3A82D04EE5800D071CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3A92D04EE6E00D071CB /* SUIT-Bold.otf */,
+				D039A3AA2D04EE6E00D071CB /* SUIT-Medium.otf */,
+				D039A3AB2D04EE6E00D071CB /* SUIT-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D039A3B02D04F01900D071CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D05C31FD2CE0E076004761A7 /* Assets.xcassets */,
+				D039A3A82D04EE5800D071CB /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D039A3B12D04F06900D071CB /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3B22D04F07B00D071CB /* FontLiterals.swift */,
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
+		D039A3B52D057DFE00D071CB /* TravelWalletClone */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3C12D05B82B00D071CB /* Tabbar */,
+				D039A3C22D05B89300D071CB /* Pay */,
+				D039A3DD2D05E95900D071CB /* Charge */,
+			);
+			path = TravelWalletClone;
+			sourceTree = "<group>";
+		};
+		D039A3BC2D059F3100D071CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3BD2D059F3800D071CB /* Color+.swift */,
+				D039A3CA2D05BC0F00D071CB /* View+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D039A3C12D05B82B00D071CB /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3BA2D057F6800D071CB /* TabbarView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		D039A3C22D05B89300D071CB /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3C52D05B8B600D071CB /* Components */,
+				D039A3C32D05B89A00D071CB /* PayView.swift */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		D039A3C52D05B8B600D071CB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3C62D05B8D100D071CB /* TitleHeaderView.swift */,
+				D039A3C82D05BA1400D071CB /* PlatinumCardView.swift */,
+				D039A3CF2D05C53A00D071CB /* MyWalletView.swift */,
+				D039A3D32D05CC7900D071CB /* AdView.swift */,
+				D039A3D52D05CF2D00D071CB /* PayFeatureView.swift */,
+				D039A3D72D05D0DC00D071CB /* FeatureView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D039A3CC2D05BE1A00D071CB /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3CD2D05BE2900D071CB /* HighlightTextModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		D039A3DD2D05E95900D071CB /* Charge */ = {
+			isa = PBXGroup;
+			children = (
+				D039A3E02D05FC3D00D071CB /* Components */,
+				D039A3DE2D05E96200D071CB /* ChargeView.swift */,
+			);
+			path = Charge;
+			sourceTree = "<group>";
+		};
+		D039A3E02D05FC3D00D071CB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D0D799EE2D06B1950069BCC0 /* TotalAmountManager.swift */,
+				D039A3E22D05FC5300D071CB /* CustomNumberPad.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		D05C31FC2CE0E076004761A7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -45,11 +194,11 @@
 		D05C32002CE0E076004761A7 /* SwiftUIStudy_Hyerin */ = {
 			isa = PBXGroup;
 			children = (
-				D05C31FC2CE0E076004761A7 /* Preview Content */,
-				D05C31FD2CE0E076004761A7 /* Assets.xcassets */,
-				D05C31FE2CE0E076004761A7 /* ContentView.swift */,
 				D05C31FF2CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift */,
+				D05C31FC2CE0E076004761A7 /* Preview Content */,
+				D039A3A72D04EE3900D071CB /* Global */,
 				D05C32062CE0E092004761A7 /* Week2 */,
+				D039A3B52D057DFE00D071CB /* TravelWalletClone */,
 			);
 			path = SwiftUIStudy_Hyerin;
 			sourceTree = "<group>";
@@ -57,6 +206,7 @@
 		D05C32062CE0E092004761A7 /* Week2 */ = {
 			isa = PBXGroup;
 			children = (
+				D05C31FE2CE0E076004761A7 /* ContentView.swift */,
 				D05C32072CE0E2DC004761A7 /* ComponentPracticeView.swift */,
 			);
 			path = Week2;
@@ -140,6 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D05C32012CE0E076004761A7 /* Preview Assets.xcassets in Resources */,
+				D039A3AC2D04EE6E00D071CB /* SUIT-SemiBold.otf in Resources */,
+				D039A3AD2D04EE6E00D071CB /* SUIT-Medium.otf in Resources */,
+				D039A3AE2D04EE6E00D071CB /* SUIT-Bold.otf in Resources */,
 				D05C32022CE0E076004761A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,9 +304,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D039A3C42D05B89D00D071CB /* PayView.swift in Sources */,
+				D039A3CE2D05BE3F00D071CB /* HighlightTextModifier.swift in Sources */,
+				D039A3BE2D059F3E00D071CB /* Color+.swift in Sources */,
+				D039A3D42D05CC7B00D071CB /* AdView.swift in Sources */,
+				D039A3BB2D057F6D00D071CB /* TabbarView.swift in Sources */,
+				D039A3E32D05FC5D00D071CB /* CustomNumberPad.swift in Sources */,
+				D039A3B32D04F08100D071CB /* FontLiterals.swift in Sources */,
+				D039A3D82D05D0E100D071CB /* FeatureView.swift in Sources */,
+				D039A3C92D05BA2A00D071CB /* PlatinumCardView.swift in Sources */,
 				D05C32032CE0E076004761A7 /* ContentView.swift in Sources */,
 				D05C32042CE0E076004761A7 /* SwiftUIStudy_HyerinApp.swift in Sources */,
+				D039A3C72D05B8E100D071CB /* TitleHeaderView.swift in Sources */,
+				D039A3CB2D05BC1200D071CB /* View+.swift in Sources */,
 				D05C32082CE0E2E2004761A7 /* ComponentPracticeView.swift in Sources */,
+				D039A3D02D05C54500D071CB /* MyWalletView.swift in Sources */,
+				D039A3DF2D05E96600D071CB /* ChargeView.swift in Sources */,
+				D0D799EF2D06B1A10069BCC0 /* TotalAmountManager.swift in Sources */,
+				D039A3D62D05CF9D00D071CB /* PayFeatureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +458,7 @@
 				DEVELOPMENT_TEAM = X395BM5WW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUIStudy-Hyerin-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,6 +488,7 @@
 				DEVELOPMENT_TEAM = X395BM5WW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUIStudy-Hyerin-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
