@@ -22,37 +22,39 @@ struct RootTabBarView: View {
     var body: some View {
         ZStack {
             TabView(selection: $selected) {
-                NavigationStack {
-                    MainView()
+                Group {
+                    NavigationStack {
+                        MainView()
+                    }
+                    .tag(Tab.pay)
+                    
+                    NavigationStack {
+                        Text("remittance")
+                    }
+                    .tag(Tab.remittance)
+                    
+                    NavigationStack {
+                        Text("direct purchase")
+                    }
+                    .tag(Tab.directPurchase)
+                    
+                    NavigationStack {
+                        Text("travel")
+                    }
+                    .tag(Tab.travel)
+                    
+                    NavigationStack {
+                        Text("my page")
+                    }
+                    .tag(Tab.myPage)
                 }
-                .tag(Tab.pay)
-                
-                NavigationStack {
-                    Text("remittance")
-                }
-                .tag(Tab.remittance)
-                
-                NavigationStack {
-                    Text("direct purchase")
-                }
-                .tag(Tab.directPurchase)
-                
-                NavigationStack {
-                    Text("travel")
-                }
-                .tag(Tab.travel)
-                
-                NavigationStack {
-                    Text("myPage")
-                }
-                .tag(Tab.myPage)
+                .toolbar(.hidden, for: .tabBar)
             }
-            .toolbar(.hidden, for: .tabBar)
-        }
-        
-        VStack {
-            Spacer()
-            tabBar
+            
+            VStack {
+                Spacer()
+                tabBar
+            }
         }
     }
     
@@ -76,7 +78,7 @@ struct RootTabBarView: View {
         .background(
             Color(hex: "FFFFFF")
                 .ignoresSafeArea()
-                .shadow(color: .black.opacity(0.3), radius: 7, x: 0, y: 5)
+                .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 5)
         )
     }
 }
