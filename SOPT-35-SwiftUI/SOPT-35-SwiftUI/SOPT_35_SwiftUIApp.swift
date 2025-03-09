@@ -11,7 +11,7 @@ import SwiftUI
 struct SOPT_35_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TravelWalletTabView()
         }
     }
 }
